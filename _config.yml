@@ -28,7 +28,7 @@ navbar-links:
     - 백준(BOJ): "boj"
     - LEETCODE: "leetcode"
   CS:
-    - 운영체제(OS): "https://naver.com"
+    - 운영체제(OS): "os"
 
 ################
 # --- Logo --- #
