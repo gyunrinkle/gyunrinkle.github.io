@@ -67,7 +67,7 @@ fork가 잘 진행됐다면, 위 사진과 같이 본인 repository에 fork된 b
 
 ![sync-fork](../assets/img/2022-12-01-GitHub-Pages-와-Jekyll-로-블로그-만들기/sync-fork.png) 
 
-위의 사진을 보니 이해가 되는 것 같다.
+위의 사진을 보니 이해가 되는 것 같다. 만약에 앞으로 원본 repository인 beautiful-jekyll에서 어떤 변화가 생기면, 내 선택에 따라 sync를 할 수 있다는 것이다.
 
 ## fork한 repository를 local로 가져오기 (굳이 안해도 되나 하는 게 편함)
 
