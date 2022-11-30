@@ -97,591 +97,298 @@ Theme 커스터마이징은 beautiful-jekyll GitHub README를 참고해서 진�
 읽어보니, 일단은 `_cofig.yml`파일을 수정해야 한다. 그래서 필자는 다음과 같이 수정했다.
 ```yml
 ###########################################################
-
 ### Welcome to Beautiful Jekyll!
-
 ### This config file is meant for settings that affect your entire website. When you first
-
 ### set up your website you should go through all these settings and edit them, but after
-
 ### the initial set up you won't need to come back to this file often.
-
 ###########################################################
 
-  
-
 ############################
-
 # --- Required options --- #
-
 ############################
-
-  
 
 # Name of website
-
 title: Gyunseo's Blog
 
-  
-
 # Your name to show in the footer
-
 author: Gyunseo Lee
 
-  
-
 ###############################################
-
 # --- List of links in the navigation bar --- #
-
 ###############################################
-
-  
 
 navbar-links:
-
-  About Me: "aboutme"
-
-  Devlog:
-
-    - WEB: "web"
-
-    - GAME: "game"
-
-  PS:
-
-    - 백준(BOJ): "boj"
-
-    - LEETCODE: "leetcode"
-
-  CS:
-
-    - 운영체제(OS): "os"
-
-  
+  About Me: "aboutme"
+  Devlog:
+    - WEB: "web"
+    - GAME: "game"
+  PS: 
+    - 백준(BOJ): "boj"
+    - LEETCODE: "leetcode"
+  CS:
+    - 운영체제(OS): "os"
 
 ################
-
 # --- Logo --- #
-
 ################
-
-  
 
 # Image to show in the navigation bar - works best with a square image
-
 # Remove this parameter if you don't want an image in the navbar
-
 avatar: "/assets/img/avatar-icon.png"
 
-  
-
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-
 round-avatar: true
 
-  
-
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
-
 # then specify the following parameter
-
 #title-img: /path/to/image
 
-  
-  
 
 #####################################
-
 # --- Footer social media links --- #
-
 #####################################
-
-  
 
 # Select the social network links that you want to show in the footer.
-
 # Uncomment the links you want to show and add your information to each one.
-
 social-network-links:
-
-  email: "rbstj0311@naver.com"
-
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-
-  github: gyunrinkle
-
-  twitter: gyunrinkle
-
-  youtube: "@gyunrinkle"
-
-  instagram: gyunrinkle
-
+  email: "rbstj0311@naver.com"
+  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  github: gyunrinkle
+  twitter: gyunrinkle
+  youtube: "@gyunrinkle"
+  instagram: gyunrinkle
 # patreon: DeanAttali
-
 # facebook: deanattali
-
-#  medium: yourname
-
-#  reddit: yourname
-
-#  linkedin: daattali
-
-#  xing: yourname
-
-#  stackoverflow: "3943160/daattali"
-
-#  snapchat: deanat78
-
-#  spotify: yourname
-
-#  telephone: +14159998888
-
-#  steam: deanat78
-
-#  twitch: yourname
-
-#  yelp: yourname
-
-#  telegram: yourname
-
-#  calendly: yourname
-
-#  mastodon: instance.url/@username
-
-#  ORCID: your ORCID ID
-
-#  google-scholar: your google scholar
-
-#  discord: invite/invite_code or users/userid
-
-#  kaggle: yourname
-
-#  hackerrank: yourname
-
-  
+#  medium: yourname
+#  reddit: yourname
+#  linkedin: daattali
+#  xing: yourname
+#  stackoverflow: "3943160/daattali"
+#  snapchat: deanat78
+#  spotify: yourname
+#  telephone: +14159998888
+#  steam: deanat78
+#  twitch: yourname
+#  yelp: yourname
+#  telegram: yourname
+#  calendly: yourname
+#  mastodon: instance.url/@username
+#  ORCID: your ORCID ID
+#  google-scholar: your google scholar
+#  discord: invite/invite_code or users/userid 
+#  kaggle: yourname
+#  hackerrank: yourname
 
 # If you want your website to generate an RSS feed, provide a description
-
 # The URL for the feed will be https://<your_website>/feed.xml
-
 rss-description: This website is a virtual proof that I'm awesome
 
-  
-
 ###########################
-
 # --- General options --- #
-
 ###########################
-
-  
 
 # Select which social network share links to show in posts
-
 share-links-active:
-
-  twitter: true
-
-  facebook: true
-
-  linkedin: true
-
-  vk: false
-
-  
+  twitter: true
+  facebook: true
+  linkedin: true
+  vk: false
 
 # How to display the link to your website in the footer
-
 # Remove this if you don't want a link in the footer
-
 url-pretty: "gyunrinkle.github.io"
 
-  
-
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-
 excerpt_length: 50
 
-  
-
 # Whether or not to show an excerpt for every blog post in the feed page
-
 feed_show_excerpt: true
 
-  
-
 # Whether or not to show a list of tags below each post preview in the feed page
-
 feed_show_tags: true
 
-  
-
 # Add a search button to the navbar
-
 post_search: true
 
-  
-
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
-
 edit_page_button: true
 
-  
-
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
-
 # If this setting is off, then long sub-menu words might get cut off
-
 # See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
-
 navbar-var-length: false
 
-  
-
 # The keywords to associate with your website, for SEO purposes
-
 #keywords: "my,list,of,keywords"
 
-  
-
 ######################################
-
 # --- Colours / background image --- #
-
 ######################################
-
-  
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-  
-
 navbar-col: "#EAEAEA"
-
 navbar-text-col: "#404040"
-
 navbar-border-col: "#DDDDDD"
-
 page-col: "#FFFFFF"
-
 text-col: "#404040"
-
 link-col: "#008AFF"
-
 hover-col: "#0085A1"
-
 footer-col: "#EAEAEA"
-
 footer-text-col: "#777777"
-
 footer-link-col: "#404040"
-
 footer-hover-col: "#0085A1"
 
-  
-
 # Alternatively, the navbar, footer, and page background can be set to an image
-
 # instead of colour
 
-  
-
 #navbar-img: "/assets/img/bgimage.png"
-
 #footer-img: "/assets/img/bgimage.png"
-
 #page-img: "/assets/img/bgimage.png"
 
-  
-
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-
 #mobile-theme-col: "#0085A1"
 
-  
-
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-
 site-css:
-
-  - "/assets/css/custom-styles.css"
-
-  
+  - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-
 #site-js:
-
-#  - "/assets/js/custom-script.js"
-
-  
+#  - "/assets/js/custom-script.js"
 
 #################################
-
 # --- Web Analytics Section --- #
-
 #################################
-
-  
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-
 #gtag: ""
 
-  
-
 # Fill in your Google Analytics ID to track your website using Google Analytics
-
 #google_analytics: ""
 
-  
-
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
-
 #cloudflare_analytics: ""
 
-  
-
 # Google Tag Manager ID
-
 #gtm: ""
 
-  
-
 # Matomo (aka Piwik) Web statistics
-
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
-
 # whether or not you want to allow users to opt out of tracking.
-
 #matomo:
-
-#  site_id: "9"
-
-#  uri: "demo.wiki.pro"
-
-#  opt-out: true
-
-  
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true
 
 ####################
-
 # --- Comments --- #
-
 ####################
-
-  
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-
 #disqus: ""
 
-  
-
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-
 #fb_comment_id: ""
 
-  
-
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
-
 #commentbox: "" # Project ID, e.g. "5694267682979840-proj"
 
-  
-
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
-
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,
-
 # (3) Install the Utterances app in your repository https://github.com/apps/utterances
-
 # See more details about the parameters below at https://utteranc.es/
-
 #utterances:
-
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-
-#  issue-term: title   # Mapping between blog posts and GitHub issues
-
-#  theme: github-light # Utterances theme
-
-#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
-
-  
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  issue-term: title   # Mapping between blog posts and GitHub issues
+#  theme: github-light # Utterances theme
+#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 # To use Staticman comments, uncomment the following section. You may leave the reCaptcha
-
-# section commented if you aren't using reCaptcha for spam protection.
-
-# Using Staticman requires advanced knowledge, please consult
-
-# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further
-
-# instructions. For any support with staticman please direct questions to staticman and
-
+# section commented if you aren't using reCaptcha for spam protection. 
+# Using Staticman requires advanced knowledge, please consult 
+# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further 
+# instructions. For any support with staticman please direct questions to staticman and 
 # not to BeautifulJekyll.
-
 #staticman:
-
-#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-
-#  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
-
-#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well)
-
-#    siteKey  : # You need to apply for a site key on Google
-
-#    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
-
-  
+#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
+#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
+#    siteKey  : # You need to apply for a site key on Google
+#    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
 
 # To use giscus comments:
-
-# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository,
-
+# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository, 
 # (2) Install the giscus app in your repository (details at https://giscus.app),
-
-# (3) Fill in *all* the parameters below
-
+# (3) Fill in *all* the parameters below 
 # See more details about giscus and each of the following parameters at https://giscus.app
-
 #giscus:
-
-#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
-
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-
-#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
-
-#  category: Announcements # Category name of your GitHub Discussion posts
-
-#  category-id: # ID of your category, retrieve this info from https://giscus.app
-
-#  mapping: pathname
-
-#  reactions-enabled: 1
-
-#  emit-metadata: 0
-
-#  theme: light
-
-  
+#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
+#  category: Announcements # Category name of your GitHub Discussion posts
+#  category-id: # ID of your category, retrieve this info from https://giscus.app
+#  mapping: pathname
+#  reactions-enabled: 1
+#  emit-metadata: 0
+#  theme: light
 
 ################
-
 # --- Misc --- #
-
 ################
-
-  
 
 # Ruby Date Format to show dates of posts
-
 date_format: "%B %-d, %Y"
 
-  
-
 # Facebook App ID
-
 #fb_app_id: ""
 
-  
-
 #################################################################################
-
 # --- You don't need to touch anything below here (but you can if you want) --- #
-
 #################################################################################
-
-  
 
 # Output options (more information on Jekyll's site)
-
 timezone: "Asia/Seoul"
-
 markdown: kramdown
-
 highlighter: rouge
-
 permalink: /:year-:month-:day-:title/
-
 paginate: 5
 
-  
-
 kramdown:
-
-  input: GFM
-
-  
+  input: GFM
 
 # Default YAML values (more information on Jekyll's site)
-
 defaults:
-
-  -
-
-    scope:
-
-      path: ""
-
-      type: "posts"
-
-    values:
-
-      layout: "post"
-
-      comments: true  # add comments to all blog posts
-
-      social-share: true # add social media sharing buttons to all blog posts
-
-  -
-
-    scope:
-
-      path: "" # any file that's not a post will be a "page" layout by default
-
-    values:
-
-      layout: "page"
-
-  
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
 
 # Exclude these files from production site
-
 exclude:
-
-  - CHANGELOG.md
-
-  - CNAME
-
-  - Gemfile
-
-  - Gemfile.lock
-
-  - LICENSE
-
-  - README.md
-
-  - screenshot.png
-
-  - docs/
-
-  
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
 
 plugins:
-
-  - jekyll-paginate
-
-  - jekyll-sitemap
-
-  
+  - jekyll-paginate
+  - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
-
 # 2fc73a3a967e97599c9763d05e564189
 ```
