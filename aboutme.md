@@ -3,20 +3,24 @@ layout: page
 title: About me
 subtitle: 성장하는 개발자
 ---
-
+# Portfolio
+- ## Game
+	- CatchMouse(쥐를 잡아라!)(https://play.google.com/store/apps/details?id=com.Team_CatchMouse.CatchMouse)
+	- 옥영나라를 구해라!(https://play.google.com/store/apps/details?id=com.Comedu_Games.SaveOkyungWorld)
 # Information
-- 이름(Name): 이균서(Gyunseo Lee)
+- ## 이름(Name)
+	- 이균서(Gyunseo Lee)
 
-- 이메일(Email): 
+- ## 이메일(Email): 
 	- rbstj0311@naver.com
 	- rbstj0311@g.skku.edu
 	- rbstj0311@gmail.com
 
-- 취미(Hobby):
+- ## 취미(Hobby):
 	- 기타 연주(playing the guitar🎸)
 	- 게임(video game 🎮)
 
-- SNS(Social Media):
+- ## SNS(Social Media):
 	- 트위터(twitter handle): @gyunrinkle
 	- 유튜브(youtube handle): @gyunrinkle
 	- 인스타그램(ig handle): @gyunrinkle
