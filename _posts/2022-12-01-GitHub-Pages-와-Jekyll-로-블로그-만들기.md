@@ -27,7 +27,7 @@ comments: true
 
 4. ## Markdown 기반 포스팅
 	Jekyll은 Markdown 문서를 기반으로 블로그 포스팅을 한다. 이 글도 Markdown으로 작성되는 중이다. Markdown은 실제로 개발자들 사이에서 상당히 많이 쓰이는 문서이다. (예를 들어, ~~GitHub라든지, GitHub라든지~~) 그리고 Obsidian과 같은 Markdown 작성 프로그램을 사용한다면, 손쉽고 편하게 문서를 뚝딱 만들 수도 있다. (지금도 Obsidian으로 작성 중이다.)
-- - -
+***
 # 본격적으로 블로그 만들기
 
 1. ## GitHub에서 Theme Fork하기
