@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: dev blog
+title: 균서의 dev blog
 
 # Your name to show in the footer
 author: Gyunseo Lee
@@ -287,6 +287,8 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+# Method 1: Using remote_theme with a GitHub repository from https://beautifuljekyll.com/getstarted/#install-steps-hard
+remote_theme: daattali/beautiful-jekyll@5.0.0
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
