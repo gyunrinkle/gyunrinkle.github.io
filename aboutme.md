@@ -27,7 +27,7 @@ subtitle: 성장하는 개발자
 
 - (2020 ~ now) 성균관대학교 소프트웨어학과 복수전공(Double Major in Computer Science, College of Computing, Sungkyunkwan University)
 
-- (2020 ~ 2022) 공군 정보보호병 병장 만기전역 (Served and Discharged from ROK Airforce, Staff Sergeant)
+- (2020 ~ 2022) 공군 정보보호병 병장 만기전역(Served and Discharged from ROK Airforce, Staff Sergeant)
 
 # Stack
 
