@@ -40,7 +40,7 @@ Jekyll은 Markdown 문서를 기반으로 블로그 포스팅을 한다. 이 글
 
 ## GitHub에서 Theme Fork하기
 
-[beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)repository를 내 GitHub에 Fork하자. 나도 GitHub의 Fork가 뭔지 잘 몰라서, 시스템 프로그래밍할 때 배웠던, C언어의 fork() 함수를 떠올렸다. fork는 영어로 갈림길이라는 의미이다. 그 의미대로 C언어에서는 코드를 실행하다가 fork()가 실행된 시점부터, 자식 프로세스가 복제가 되어, 부모 프로세스로 부터 갈라져 나온다. GitHub의 fork도 비슷하다. 내가 딴 사람의 repository를 fork한 시점부터 나만의 repository를 갖게되는 것이다
+[beautiful-jekyll](https://github.com/daattali/beautiful-jekyll) repository를 내 GitHub에 Fork하자. 나도 GitHub의 Fork가 뭔지 잘 몰라서, 시스템 프로그래밍할 때 배웠던, C언어의 fork() 함수를 떠올렸다. fork는 영어로 갈림길이라는 의미이다. 그 의미대로 C언어에서는 코드를 실행하다가 fork()가 실행된 시점부터, 자식 프로세스가 복제가 되어, 부모 프로세스로 부터 갈라져 나온다. GitHub의 fork도 비슷하다. 내가 딴 사람의 repository를 fork한 시점부터 나만의 repository를 갖게되는 것이다
 
 ![beautiful-jekyll-fork](../assets/img/2022-12-01-GitHub-Pages-와-Jekyll-로-블로그-만들기/beautiful-jekyll-fork.png)
 
