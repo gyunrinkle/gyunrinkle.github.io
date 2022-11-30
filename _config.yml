@@ -22,7 +22,7 @@ author: Gyunseo Lee
 navbar-links:
   About Me: "aboutme"
   Devlog:
-    - WEB: "web.html"
+    - WEB: "web"
     - GAME: "game"
   PS: 
     - 백준(BOJ): "boj"
