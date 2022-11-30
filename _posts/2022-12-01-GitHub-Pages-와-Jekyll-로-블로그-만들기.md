@@ -36,19 +36,23 @@ comments: true
 
 1. ## GitHub에서 Theme Fork하기
 	[beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)repository를 내 GitHub에 Fork하자. 나도 GitHub의 Fork가 뭔지 잘 몰라서, 시스템 프로그래밍할 때 배웠던, C언어의 fork() 함수를 떠올렸다. fork는 영어로 갈림길이라는 의미이다. 그 의미대로 C언어에서는 코드를 실행하다가 fork()가 실행된 시점부터, 자식 프로세스가 복제가 되어, 부모 프로세스로 부터 갈라져 나온다. GitHub의 fork도 비슷하다. 내가 딴 사람의 repository를 fork한 시점부터 나만의 repository를 갖게되는 것이다.
+	   
+	![beautiful-jekyll-fork](../assets/img/2022-12-01-GitHub-Pages-와-Jekyll-로-블로그-만들기/beautiful-jekyll-fork.png)   
 	
-	![beautiful-jekyll-fork](../assets/img/2022-12-01-GitHub-Pages-와-Jekyll-로-블로그-만들기/beautiful-jekyll-fork.png)
+	위 사진과 같이 beautiful-jekyll repository에서 fork를 눌러서, 본인 repository에 fork한다.   
 	
-	 위 사진과 같이 beautiful-jekyll repository에서 fork를 눌러서, 본인 repository에 fork한다.
-	
-	 ![creat-a-new-fork](../assets/img/2022-12-01-GitHub-Pages-와-Jekyll-로-블로그-만들기/creat-a-new-fork.png) 
+	 ![creat-a-new-fork](../assets/img/2022-12-01-GitHub-Pages-와-Jekyll-로-블로그-만들기/creat-a-new-fork.png)   
 	 
-	 위 사진과 같은 create a new fork 사이트로 넘어가면, 빨간색으로 그린 부분을 잘 확인하자. 
-	 
+	 위 사진과 같은 create a new fork 사이트로 넘어가면, 빨간색으로 그린 부분을 잘 확인하자.   
+	  
 	 1. Owner는 본인 Github Handle이 돼야 한다. (여기서는 필자가 미리 생성을 했어서, 내가 속한 딴 Organization이 대신 뜬 상태이다.) 
 	 2. beautiful-jekyll의 master branch만 copy를 해야 한다.
-	 3. 1, 2번이 잘 확인 됐으면, Creat fork를 눌러, 본인 repository로 fork를 진행한다.
+	 3. 1, 2번이 잘 확인 됐으면, Creat fork를 눌러, 본인 repository로 fork를 진행한다.   
 	 
-	 ![forked-repository](forked-repository.png)
+	 ![forked-repository](forked-repository.png)   
 	 
-	 fork가 잘 진행됐다면, 위 사진과 같이 본인 repository에 fork된 beautiful-jekyll이 생길 것이다.
+	 fork가 잘 진행됐다면, 위 사진과 같이 본인 repository에 fork된 beautiful-jekyll이 생길 것이다. 그런데 다음과 같은 의미 들 수 있다. 
+	 
+	 
+	
+	
