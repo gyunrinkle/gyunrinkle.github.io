@@ -62,6 +62,7 @@ fork가 잘 진행됐다면, 위 사진과 같이 본인 repository에 fork된 b
 
 > fork는 다른 사람의 Github repository에서 내가 어떤 부분을 수정하거나 추가 기능을 넣고 싶을 때 해당 respository를 내 Github repository로 그대로 복제하는 기능이다. fork한 저장소는 원본(다른 사람의 github repository)와 연결되어 있다. 여기서 연결 되어 있다는 의미는 original repository에 어떤 변화가 생기면(새로운 commit) 이는 그대로 forked된 repository로 반영할 수 있다. 이 때 fetch나 rebase의 과정이 필요하다.
 > ![fork의 과정](https://velog.velcdn.com/post-images%2Fimacoolgirlyo%2Fcbe5ca40-5f44-11e9-88b2-25d00148b532%2Fgitfork.png)
+> 
 > [출처](https://velog.io/@imacoolgirlyo/Git-fork%EC%99%80-clone-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90-5sjuhwfzgp)
 
 ![sync-fork](../assets/img/2022-12-01-GitHub-Pages-와-Jekyll-로-블로그-만들기/sync-fork.png) 
