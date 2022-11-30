@@ -26,9 +26,9 @@ navbar-links:
     - Game: "game"
   PS: 
     - 백준(BOJ): "boj"
-    - LeetCode: "leetcode"
+    - LEETCODE: "leetcode"
   CS:
-    - 운영체제(Operating System): "https://naver.com"
+    - 운영체제(OS): "https://naver.com"
 
 ################
 # --- Logo --- #
