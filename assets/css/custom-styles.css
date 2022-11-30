@@ -18,5 +18,9 @@ i,
 .fal,
 .far,
 .fas {
-    font-family: "Font Awesome 5 Free" !important;
+    font-family: "Font Awesome 5 Brands" !important;
 }
+
+/* .fab {
+    font-family: "Font Awesome 5 Brands" !important;
+} */
