@@ -49,7 +49,7 @@ comments: true
 	 2. beautiful-jekyll의 master branch만 copy를 해야 한다.
 	 3. 1, 2번이 잘 확인 됐으면, Creat fork를 눌러, 본인 repository로 fork를 진행한다.   
 	 
-    ![forked-repository](forked-repository.png)   
+    ![forked-repository]((../assets/img/2022-12-01-GitHub-Pages-와-Jekyll-로-블로그-만들기/forked-repository.png)   
 	 
     fork가 잘 진행됐다면, 위 사진과 같이 본인 repository에 fork된 beautiful-jekyll이 생길 것이다. 그런데 다음과 같은 의미 들 수 있다. 
 	 
