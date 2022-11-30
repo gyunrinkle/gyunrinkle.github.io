@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: 균서의 dev blog
+title: 균서의 devlog
 
 # Your name to show in the footer
 author: Gyunseo Lee
@@ -53,8 +53,8 @@ social-network-links:
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: gyunrinkle
   twitter: gyunrinkle
-  youtube: @gyunrinkle
-  instagram: deanat78
+  youtube: "@gyunrinkle"
+  instagram: gyunrinkle
 # patreon: DeanAttali
 # facebook: deanattali
 #  medium: yourname
