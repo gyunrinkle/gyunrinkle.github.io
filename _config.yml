@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Gyunseo's Devlog
+title: Gyunseo's Blog
 
 # Your name to show in the footer
 author: Gyunseo Lee
@@ -21,7 +21,7 @@ author: Gyunseo Lee
 
 navbar-links:
   About Me: "aboutme"
-  Dev:
+  Devlog:
     - Web: "https://google.com"
     - Game: "https://bing.com"
   PS: 
