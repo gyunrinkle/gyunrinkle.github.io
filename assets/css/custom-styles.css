@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@600&family=Noto+Sans+KR:wght@700&family=Noto+Sans+Mono:wght@600&display=swap');
 
 * {
-    font-family: 'IBM Plex Sans KR', sans-serif !important;
+    font-family: 'IBM Plex Sans KR', 'Noto Sans KR', sans-serif !important;
 }
 
 code,
 kbd,
 pre,
 samp {
-    font-family: 'IBM Plex Mono', monospace !important;
+    font-family: 'IBM Plex Mono', 'Noto Sans Mono', monospace !important;
 }
 
 .fa,
