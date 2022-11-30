@@ -23,6 +23,7 @@ navbar-links:
   About Me: "aboutme"
   Devlog:
     - WEB: "web"
+      - LIQUID: "liquid"
     - GAME: "game"
   PS: 
     - 백준(BOJ): "boj"
