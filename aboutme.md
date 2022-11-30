@@ -23,9 +23,9 @@ subtitle: 성장하는 개발자
 
 # History
 
-- (2019 ~) 성균관대학교 컴퓨터교육과 입학(Major in Computer Education, College of Education, Sungkyunkwan University) 
+- (2019 ~ now) 성균관대학교 컴퓨터교육과 입학(Major in Computer Education, College of Education, Sungkyunkwan University) 
 
-- (2020 ~) 성균관대학교 소프트웨어학과 복수전공(Double Major in Computer Science, College of Computing, Sungkyunkwan University)
+- (2020 ~ now) 성균관대학교 소프트웨어학과 복수전공(Double Major in Computer Science, College of Computing, Sungkyunkwan University)
 
 - (2020 ~ 2022) 공군 정보보호병 병장 만기전역 (Served and Discharged from ROK Airforce, Staff Sergeant)
 
@@ -41,6 +41,7 @@ subtitle: 성장하는 개발자
 	- Python
 	- JavaScript
 	- Java, Kotlin
+	- C#
 
 - ## DB
 	- mysql
@@ -54,4 +55,7 @@ subtitle: 성장하는 개발자
 - ## Web Framework
 	- React
 	- Spring boot
+
+- ## Game Engine
+	- Unity
 
