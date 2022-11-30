@@ -1,16 +1,57 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 성장하는 개발자
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+# Information
+- 이름(Name): 이균서(Gyunseo Lee)
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- 이메일(Email): 
+	- rbstj0311@naver.com
+	- rbstj0311@g.skku.edu
+	- rbstj0311@gmail.com
 
-What else do you need?
+- 취미(Hobby):
+	- 기타 연주(playing the guitar🎸)
+	- 게임(video game 🎮)
 
-### My story
+- SNS(Social Media):
+	- 트위터(twitter handle): @gyunrinkle
+	- 유튜브(youtube handle): @gyunrinkle
+	- 인스타그램(ig handle): @gyunrinkle
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+# History
+
+- (2019 ~) 성균관대학교 컴퓨터교육과 입학(Major in Computer Education, College of Education, Sungkyunkwan University) 
+
+- (2020 ~) 성균관대학교 소프트웨어학과 복수전공(Double Major in Computer Science, College of Computing, Sungkyunkwan University)
+
+- (2020 ~ 2022) 공군 정보보호병 병장 만기전역 (Served and Discharged from ROK Airforce, Staff Sergeant)
+
+# Stack
+
+- ## OS
+	- Linux(Ubuntu), 
+	- Windows, 
+	- macOS
+
+- ## Programming Language
+	- C/C++
+	- Python
+	- JavaScript
+	- Java, Kotlin
+
+- ## DB
+	- mysql
+	- oracle
+
+- ## DevOps
+	- git
+	- aws
+	- azure
+
+- ## Web Framework
+	- React
+	- Spring boot
+
