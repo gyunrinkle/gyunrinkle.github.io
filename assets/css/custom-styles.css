@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR&display=swap');
 
 * {
     font-family: 'IBM Plex Sans KR', sans-serif !important;
@@ -9,4 +9,10 @@ kbd,
 pre,
 samp {
     font-family: 'IBM Plex Mono', monospace !important;
+}
+
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free" !important;
 }
