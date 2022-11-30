@@ -25,7 +25,7 @@ navbar-links:
     - Web: "https://google.com"
     - Game: "https://bing.com"
   PS: 
-    - 백준(BOJ): "https://acmicpc.com"
+    - 백준(BOJ): "https://acmicpc.net"
     - LeetCode: "https://leetcode.com"
   CS:
     - 운영체제(Operating System): "https://naver.com"
