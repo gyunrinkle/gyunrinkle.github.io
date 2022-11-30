@@ -11,16 +11,12 @@ samp {
     font-family: 'IBM Plex Mono', monospace !important;
 }
 
-i,
 .fa,
-.fab,
-.fad,
-.fal,
 .far,
 .fas {
-    font-family: "Font Awesome 5 Brands" !important;
+    font-family: "Font Awesome 5 Free" !important;
 }
 
-/* .fab {
+.fab {
     font-family: "Font Awesome 5 Brands" !important;
-} */
+}
