@@ -2,6 +2,7 @@
 _site
 .sass-cache
 .vagrant
+.obsidian
 
 # general
 .DS_Store
