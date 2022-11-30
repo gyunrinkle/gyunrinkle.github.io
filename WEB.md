@@ -1,5 +1,5 @@
 ---
 layout: page
-title: WEB
-subtitle: WEB posts
+title: Web
+subtitle: Web devlog posts
 ---
