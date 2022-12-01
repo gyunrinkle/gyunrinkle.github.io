@@ -2,7 +2,8 @@
 layout: post
 title: Jekyll Blog Post의 Markdown Code Block 에서 Liquid Template 작성하기
 subtitle: 짜증나는 Liquid Template
-tags: [liquid, jekyll, html]
+categories: [web-dev]
+tags: [blog, liquid, jekyll, html]
 comments: true
 sitemap:
   changefreq: daily

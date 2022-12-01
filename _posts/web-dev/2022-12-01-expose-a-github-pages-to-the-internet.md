@@ -2,6 +2,7 @@
 layout: post
 title: 검색창에 GitHub Pages 노출 시키기
 subtitle: 구글링할 때 내 블로그가 나오길...
+categories: [web-dev]
 tags: [blog, liquid, jekyll]
 comments: true
 sitemap:

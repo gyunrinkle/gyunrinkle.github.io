@@ -2,6 +2,7 @@
 layout: post
 title: Obsidian 사용 팁
 subtitle: 생각날 때마다 노트하기
+categories: [etc]
 tags: [obsidian]
 comments: true
 sitemap:
