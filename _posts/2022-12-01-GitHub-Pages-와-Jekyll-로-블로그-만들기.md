@@ -30,7 +30,7 @@ comments: true
 
 ## 도메인이 느낌있다.
 
-&lt;GitHub Handle&gt;.github.io 형태의 도메인이 그냥 개발자 테크 블로그스럽고, 멋있어 보였다. 실제로 백준 문제나 코딩하다가 구글링 했을 때, 도메인이 github.io이면 왠지 모르게 믿음직스러웠다.
+&lt;GitHub Username&gt;.github.io 형태의 도메인이 그냥 개발자 테크 블로그스럽고, 멋있어 보였다. 실제로 백준 문제나 코딩하다가 구글링 했을 때, 도메인이 github.io이면 왠지 모르게 믿음직스러웠다.
 
 ## 남들이 만들어 놓은 Jekyll Theme
 
@@ -58,7 +58,7 @@ Jekyll은 Markdown 문서를 기반으로 블로그 포스팅을 한다. 이 글
 
 위 사진과 같은 create a new fork 사이트로 넘어가면, 빨간색으로 그린 부분을 잘 확인하자.
 
-1. Owner는 본인 Github Handle이 돼야 한다. (여기서는 필자가 미리 생성을 했어서, 내가 속한 딴 Organization이 대신 뜬 상태이다.) **그리고 repository 이름은 &lt;GitHub Handle&gt;.github.io이어야 한다.**
+1. Owner는 본인 Github Username이 돼야 한다. (여기서는 필자가 미리 생성을 했어서, 내가 속한 딴 Organization이 대신 뜬 상태이다.) **그리고 repository 이름은 &lt;GitHub Username&gt;.github.io이어야 한다.**
 2. beautiful-jekyll의 master branch만 copy를 해야 한다.
 3. 1, 2번이 잘 확인 됐으면, Creat fork를 눌러, 본인 repository로 fork를 진행한다.   
 
@@ -523,7 +523,7 @@ samp * {
 
 [Beautiful Jekyll FAQ](https://beautifuljekyll.com/faq/)를 참고하도록 하자.
 
-## `<GitHub Handle>.github.io` URI로 블로그 접속하기
+## `<GitHub Username>.github.io` URI로 블로그 접속하기
 
 <https://gyunrinkle.github.io>
 
