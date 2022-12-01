@@ -1,6 +1,5 @@
 ---
 layout: category
-title: computer-science # title명과 category는 같아야 함
+title: computer-science
 subtitle: Computer Science Category
-permalink: :basename/
 ---
