@@ -78,7 +78,9 @@ layout: page
       </div>
       {% endunless %}
 
-      <div class="blog-categories">
+			<!-- Categories 삽입 -->
+			{% if post.categories.size > 0 %}
+			<div class="blog-categories">
         <span>Categories:</span>
         <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
         <ul class="d-inline list-inline" role="list">
@@ -89,7 +91,9 @@ layout: page
           {% endfor %}
         </ul>
       </div>
-
+			{% endif %}
+			<!-- Categories 삽입 -->
+      
       {% if site.feed_show_tags != false and post.tags.size > 0 %}
       <div class="blog-tags">
         <span>Tags:</span>

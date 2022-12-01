@@ -43,6 +43,17 @@ layout: base
         {{ content }}
       </article>
 
+      <!-- Categories 삽입 -->
+      {% if page.categories.size > 0 %}
+        <div class="blog-categories">
+          <span>categories:</span>
+          {% for category in page.categories %}
+            <a href="{{ '/categories/' | append: category | absolute_url}}">{{- category -}}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+      <!-- Categories 삽입 -->
+
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           <span>Tags:</span>
