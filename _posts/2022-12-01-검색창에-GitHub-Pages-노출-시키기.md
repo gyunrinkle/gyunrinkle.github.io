@@ -97,8 +97,16 @@ Sitemap: https://<GitHub Username>.github.io/sitemap.xml
 
 liquid template을 이용하여, 위와 같이 `robots.txt`를 작성하여, root directory(`/`)에 저장하고, 원격 저장소에 push 하자.
 
+![robots-txt 결과](../assets/img/2022-12-01-검색창에-GitHub-Pages-노출-시키기/robots-txt-결과.png)
+
+
+`https://<GitHub Username>.github.io/robots.txt`로 접속을 했을 때, 위의 사진과 같이 내용이 잘 나오면, `robots.txt`도 웹사이트에 등록이 잘 된 것이다.
+
 
 # Google Search Console에 sitemap 제출
 
+![sitemap 제출 결과](../assets/img/2022-12-01-검색창에-GitHub-Pages-노출-시키기/sitemap-제출.png)
 
 
+Google Search Consoel -> sitemaps 페이지에서 본인 `sitemap.xml`을 등록해준다.
+처음 등록 시에는 실패/가져올 수 없음이라고 뜬다고 한다. 기다려 보자
