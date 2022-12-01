@@ -521,6 +521,10 @@ samp * {
 }
 ```
 
+### `favicon.ico`
+
+root directory(`/`)에서 `favicon.ico`를 넣고 push하면, 알아서 favicon이 생긴다.
+
 ### 그 이외의 커스터마이징 사항
 
 [Beautiful Jekyll FAQ](https://beautifuljekyll.com/faq/)를 참고하도록 하자.
