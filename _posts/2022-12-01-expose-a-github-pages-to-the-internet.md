@@ -4,6 +4,8 @@ title: 검색창에 GitHub Pages 노출 시키기
 subtitle: 구글링할 때 내 블로그가 나오길...
 tags: [blog, liquid, jekyll]
 comments: true
+sitemap:
+	changefreq: daily
 ---
 
 # 검색창에 어떻게 노출 시킬까?

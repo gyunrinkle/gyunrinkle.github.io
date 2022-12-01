@@ -6,6 +6,8 @@ gh-repo: gyunrinkle/gyunrinkle.github.io
 gh-badge: [star, fork, follow]
 tags: [jekyll, liquid, html, css]
 comments: true
+sitemap:
+	changefreq: daily
 ---
 # 목차
 

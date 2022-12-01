@@ -4,6 +4,8 @@ title: Obsidian 사용 팁
 subtitle: 생각날 때마다 노트하기
 tags: [obsidian]
 comments: true
+sitemap:
+	changefreq: daily
 ---
 # Code 복붙 할 때 `Ctrl + Shift + V`
 

@@ -4,6 +4,8 @@ title: Jekyll Blog Post의 Markdown Code Block 에서 Liquid Template 작성하�
 subtitle: 짜증나는 Liquid Template
 tags: [liquid, jekyll, html]
 comments: true
+sitemap:
+	changefreq: daily
 ---
 
 ### Notification
