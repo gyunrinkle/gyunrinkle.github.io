@@ -250,7 +250,7 @@ date_format: "%B %-d, %Y"
 timezone: "Asia/Seoul"
 markdown: kramdown
 highlighter: rouge
-permalink: :categories/:year-:month-:day-:title/
+permalink: :categories/:year-:month-:day-:path:title/
 paginate: 5
 
 kramdown:
