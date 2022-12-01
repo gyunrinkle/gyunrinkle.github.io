@@ -109,7 +109,7 @@ Theme 커스터마이징은 beautiful-jekyll GitHub README를 참고해서 진�
 ############################
 
 # Name of website
-title: Gyunseo's Blog
+title: 균링클(gyunrinkle)
 
 # Your name to show in the footer
 author: Gyunseo Lee
@@ -324,16 +324,16 @@ site-css:
 # (2) Install the giscus app in your repository (details at https://giscus.app),
 # (3) Fill in *all* the parameters below 
 # See more details about giscus and each of the following parameters at https://giscus.app
-#giscus:
-#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
-#  category: Announcements # Category name of your GitHub Discussion posts
-#  category-id: # ID of your category, retrieve this info from https://giscus.app
-#  mapping: pathname
-#  reactions-enabled: 1
-#  emit-metadata: 0
-#  theme: light
+giscus:
+ hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
+ repository: "gyunrinkle/gyunrinkle.github.io" # GitHub username/repository eg. "daattali/beautiful-jekyll"
+ repository-id: abc_123 # ID of your repository, retrieve this info from https://giscus.app
+ category: Announcements # Category name of your GitHub Discussion posts
+ category-id: abc_123 # ID of your category, retrieve this info from https://giscus.app
+ mapping: pathname
+ reactions-enabled: 1
+ emit-metadata: 0
+ theme: light
 
 ################
 # --- Misc --- #
