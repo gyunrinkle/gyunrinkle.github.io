@@ -21,26 +21,9 @@ author: Gyunseo Lee
 
 navbar-links:
   About Me: "aboutme"
-  WEB:
-    - JEKYLL: "web/jekyll"
-    - LIQUID: "web/liquid"
-    - SPRING-BOOT: "web/spring-boot"
-    - REACT: "web/react"
-    - JS: "web/js"
-    - HTML: "web/html"
-    - CSS: "web/css"
-    - POST-TEMPLATE: "web/post-template"
-  GAME:
-    - UNITY: "game/unity"
-  PS: 
-    - BOJ: "ps/boj"
-    - LEETCODE: "ps/leetcode"
-  CS:
-    - DATA-STRUCTURE: "cs/data-structure"
-    - AlGORITHMS: "cs/algorithms"
-    - OS: "cs/os"
-  ETC:
-    - LIFE: "html-files/life"
+  web dev: "categories/web-dev"
+  cs: "categories/computer-scicence"
+  etc: "categories/etc"
 
 ################
 # --- Logo --- #
