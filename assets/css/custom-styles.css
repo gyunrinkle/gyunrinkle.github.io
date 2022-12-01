@@ -1,4 +1,8 @@
+--- 
+layout: null 
+--- 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=IBM+Plex+Sans+KR:wght@600&family=Noto+Sans+KR:wght@700&family=Noto+Sans+Mono:wght@500&display=swap');
+@import url("pygment_highlights.css");
 
 /* 소스 코드를 제외한 모든 글꼴은 sans-serif */
 * {
@@ -24,3 +28,47 @@ samp * {
 .fab {
     font-family: "Font Awesome 5 Brands" !important;
 }
+
+/* --- categories --- */
+
+.blog-categories {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.9375rem;
+    margin: 1.875rem 0;
+  }
+  
+  .blog-categories span {
+    color: {{ site.text-col | default: "#404040" }};
+    opacity: 0.8;
+  }
+  
+  .blog-categories .list-inline-item {
+    margin-right: 0;
+  }
+  
+  .blog-categories a {
+    color: {{ site.text-col | default: "#404040" }};
+    text-decoration: none;
+    padding: 0 0.3125rem;
+    opacity: 0.8;
+    border: 1px solid transparent;
+    border-radius: 0.1875rem;
+  }
+  
+  .blog-categories a:hover {
+    opacity: 1;
+    color: {{ site.text-col | default: "#404040" }};
+    border-color: {{ site.text-col | default: "#404040" }};
+  }
+  
+  .post-preview .blog-categories {
+    margin-top: 0.3125rem;
+    margin-bottom: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .post-preview .blog-categories {
+      margin-top: 0.625rem;
+    }
+  }
+  
