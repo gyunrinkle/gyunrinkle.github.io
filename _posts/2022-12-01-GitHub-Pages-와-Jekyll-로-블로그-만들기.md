@@ -96,6 +96,7 @@ Theme 커스터마이징은 beautiful-jekyll GitHub README를 참고해서 진�
 >Note that this was the easy way to _create_ your website, but it does come at a cost: when Beautiful Jekyll gains new features in the future, _updating_ your website to include all the latest features is cumbersome. See the [FAQ](https://beautifuljekyll.com/faq/#updating) for help with upgrading in the future.
 
 읽어보니, 일단은 `_cofig.yml`파일을 수정해야 한다. 그래서 필자는 다음과 같이 수정했다.
+
 ```yml
 ###########################################################
 ### Welcome to Beautiful Jekyll!
@@ -337,9 +338,9 @@ site-css:
 giscus:
  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
  repository: "gyunrinkle/gyunrinkle.github.io" # GitHub username/repository eg. "daattali/beautiful-jekyll"
- repository-id: R_kgDOIh9wsA # ID of your repository, retrieve this info from https://giscus.app
+ repository-id: abc123_abc123 # ID of your repository, retrieve this info from https://giscus.app
  category: Announcements # Category name of your GitHub Discussion posts
- category-id: DIC_kwDOIh9wsM4CS2N3 # ID of your category, retrieve this info from https://giscus.app
+ category-id: abc12_abc12 # ID of your category, retrieve this info from https://giscus.app
  mapping: pathname
  reactions-enabled: 1
  emit-metadata: 0
@@ -403,4 +404,117 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 ```
-필자는 nav-bar, aboutme, giscus, footer의 SNS연락처 부분을 수정했다. nav-bar에는 포스트의 태그별로 메뉴를 구성하였다. 태그별 메뉴를 클릭하면, 그 tag에 해당하는 포스트를 모아서 보여준다. 이는 root directory(`/`)에 `<tag>.html`을 추가하여 구성하였다. 각 html파일에는 liquid script를 사용하여, tag별 포스트를 렌더링하였다. 그리고 웹사이트 기본 폰트가 마음에 영 들지 않아서, site-css로 `custom-style.css`를 추가했다.
+
+필자는 nav-bar, aboutme, giscus, footer의 SNS연락처 부분을 수정했다. nav-bar에는 포스트의 태그별로 메뉴를 구성하였다. 태그별 메뉴를 클릭하면, 그 tag에 해당하는 포스트를 모아서 보여준다. 이는 root directory(`/`)에 `<tag>.html`을 추가하여 구성하였다. 각 html파일에는 liquid script를 사용하여, tag별 포스트를 렌더링하였다. 
+
+### `<tag>.html`
+
+```ruby
+---
+layout: page
+title: tag
+---
+
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+
+{%- capture tag -%}
+tag
+{%- endcapture -%}
+
+<a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag
+    -}}&nbsp;({{site.tags[tag].size}})</a>
+
+<div id="full-tags-list">
+    <h2 id="{{- tag -}}" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+    </h2>
+    <div class="post-list">
+        {%- for post in site.tags[tag] -%}
+        <div class="tag-entry">
+            <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
+            <div class="entry-date">
+                <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+            </div>
+        </div>
+        {%- endfor -%}
+    </div>
+</div>
+```
+
+포스트에 댓글을 달게 하고 싶어서, giscus를 도입했다. giscus 관련 설명은 다른 블로그 포스트에 자세히 설명돼 있다. (추후에 필자가 따로 giscus 관련 포스트를 게재하고, 이 포스트에 링크를 걸도록 하겠다.)
+
+># [1] 💎 Giscus 소개[Permalink](https://dev-ujin.github.io/jekyll-blog/add-comments-and-likes-with-giscus#1--giscus-%EC%86%8C%EA%B0%9C "Permalink")
+>
+>Giscus는 Github Discussion을 기반으로 하는 프로그램이다. [Github discussion search API](https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions#search)를 이용하여 사용자가 선택한 **맵핑 방식**에 따라 `pathname`이나 `url` 혹은 `title`로 연관된 discussion을 찾고 없으면 Giscus Bot🤖이 새로 생성한다.
+>
+># [2] 💎 Giscus로 바꾼 이유[Permalink](https://dev-ujin.github.io/jekyll-blog/add-comments-and-likes-with-giscus#2--giscus%EB%A1%9C-%EB%B0%94%EA%BE%BC-%EC%9D%B4%EC%9C%A0 "Permalink")
+>
+>1.  `Discussion` 글 자체에 누를 수 있는 reaction도 제공하는데 이를 좋아요 기능처럼 사용할 수 있기 때문이다. (이 기능을 사용하려면 기능 탭에서 `메인 포스트에 반응 남기기`에 체크해야한다.)
+>2.  커스텀 테마를 지원하기 때문이다.
+>3.  ‘댓글’이라는 특성 자체가 `Issue`보다는 `Discussion`에 더 적합할 것 같았기 때문이다.
+>4.  나는 댓글 수가 제로였기 때문에😅 해당사항이 없지만 `Issue`를 `Discussion`으로 마이그레이션 할 수 있다고 한다.
+>
+># [3] 💎 Giscus 설정 및 적용[Permalink](https://dev-ujin.github.io/jekyll-blog/add-comments-and-likes-with-giscus#3--giscus-%EC%84%A4%EC%A0%95-%EB%B0%8F-%EC%A0%81%EC%9A%A9 "Permalink")
+>
+>Giscus는 [한국어 공식 문서](https://giscus.app/ko)를 제공하고 있기 때문에 크게 어렵지 않게 진행할 수 있다.
+>
+>내가 설정한 값들은 아래와 같다.
+>
+>-   Discussion 맵핑 방식: `pathname(경로)`
+>-   Discussion 카테고리: 권장사항 처럼 Announcements 타입/`이 카테고리에서만 discussion 찾기`에 체크
+>-   기능: `메인 포스트에 반응 남기기`, `댓글 위에 댓글 상자 배치`에 체크
+>-   테마: Github Light
+>
+>Discussion 맵핑 방식이나 script 코드를 적용하는 방식은 Utterances와 동일하다. 이전에 작성한 [[Jekyll Blog] 댓글 기능 추가하기(feat. Utterances)](https://dev-ujin.github.io/jekyll-blog/add-comments-with-utterances)에 자세하게 설명해두었니 참고할 수 있다.
+>
+>조만간 블로그에 어울리는 💜보라보라한 테마💜를 하나 만들어봐야겠다.
+>
+># 참고[Permalink](https://dev-ujin.github.io/jekyll-blog/add-comments-and-likes-with-giscus#%EC%B0%B8%EA%B3%A0 "Permalink")
+>
+>-   [Giscus Docs](https://giscus.app/)
+
+[출처](https://dev-ujin.github.io/jekyll-blog/add-comments-and-likes-with-giscus)
+
+그리고 웹사이트 기본 폰트가 마음에 영 들지 않아서, site-css로  `/assets/css/`에 `custom-style.css`를 추가했다. `custom-style.css`에 명시된 style은 기존의 Theme의 style을 overwrite한다.
+
+### `custom-style.css`
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=IBM+Plex+Sans+KR:wght@600&family=Noto+Sans+KR:wght@700&family=Noto+Sans+Mono:wght@500&display=swap');
+
+/* 소스 코드를 제외한 모든 글꼴은 sans-serif */
+* {
+    font-family: "IBM Plex Sans KR", "Noto Sans KR", sans-serif !important;
+}
+
+
+/* 소스 코드는 monospace */
+code,
+kbd *,
+pre *,
+samp * {
+    font-family: "IBM Plex Mono", "Noto Sans Mono", monospace !important;
+}
+
+/* Font Awesome */
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands" !important;
+}
+```
+
+### 그 이외의 커스터마이징 사항
+
+[Beautiful Jekyll FAQ](https://beautifuljekyll.com/faq/)를 참고하도록 하자.
+
+## `<GitHub Handle>.github.io` URI로 블로그 접속하기
+
+<https://gyunrinkle.github.io>
+
+***

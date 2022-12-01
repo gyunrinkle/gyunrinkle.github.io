@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=IBM+Plex+Sans+KR:wght@600&family=Noto+Sans+KR:wght@700&family=Noto+Sans+Mono:wght@500&display=swap');
 
+/* 소스 코드를 제외한 모든 글꼴은 sans-serif */
 * {
     font-family: "IBM Plex Sans KR", "Noto Sans KR", sans-serif !important;
 }
 
+
+/* 소스 코드는 monospace */
 code,
 kbd *,
 pre *,
@@ -11,6 +14,7 @@ samp * {
     font-family: "IBM Plex Mono", "Noto Sans Mono", monospace !important;
 }
 
+/* Font Awesome */
 .fa,
 .far,
 .fas {
