@@ -481,8 +481,8 @@ jekyll
 ># 참고[Permalink](https://dev-ujin.github.io/jekyll-blog/add-comments-and-likes-with-giscus#%EC%B0%B8%EA%B3%A0 "Permalink")
 >
 >-   [Giscus Docs](https://giscus.app/)
-
-[출처](https://dev-ujin.github.io/jekyll-blog/add-comments-and-likes-with-giscus)
+>
+>[출처](https://dev-ujin.github.io/jekyll-blog/add-comments-and-likes-with-giscus)
 
 그리고 웹사이트 기본 폰트가 마음에 영 들지 않아서, site-css로  `/assets/css/`에 `custom-style.css`를 추가했다. `custom-style.css`에 명시된 style은 기존의 Theme의 style을 overwrite한다.
 
