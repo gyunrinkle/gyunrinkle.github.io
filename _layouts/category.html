@@ -79,6 +79,18 @@ layout: page
 			</div>
 			{% endunless %}
 
+			<div class="blog-categories">
+        <span>Categories:</span>
+        <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+        <ul class="d-inline list-inline" role="list">
+          {% for category in post.categories %}
+          <li class="list-inline-item">
+            <a href="{{ '/categories/' | append: category | absolute_url}}">{{- category -}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+			
 			{% if site.feed_show_tags != false and post.tags.size > 0 %}
 			<div class="blog-tags">
 				<span>Tags:</span>
