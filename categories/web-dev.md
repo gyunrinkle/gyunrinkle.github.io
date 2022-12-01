@@ -1,6 +1,6 @@
 ---
 layout: category
-title: web-dev
+title: Web Development
 subtitle: Web Dev Category
 categories: [web-dev]
 ---

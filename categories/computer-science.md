@@ -1,6 +1,6 @@
 ---
 layout: category
-title: computer-science
+title: Computer Science
 subtitle: Computer Science Category
 categories: [computer-science]
 ---
