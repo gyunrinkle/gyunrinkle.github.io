@@ -27,6 +27,6 @@ samp * {
 
 @media(prefers-color-scheme:dark) {
     * {
-        filter: invert(100%);
+        filter: invert(100%) !important;
     }
 }
