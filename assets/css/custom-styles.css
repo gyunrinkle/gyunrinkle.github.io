@@ -27,7 +27,7 @@ samp * {
 
 @media(prefers-color-scheme:dark) {
     body {
-        background-color: black;
+        background-color: grey;
         color: white;
     }
 }
