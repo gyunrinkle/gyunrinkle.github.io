@@ -116,4 +116,5 @@ Google Search Consoel -> sitemaps 페이지에서 본인 `sitemap.xml`을 등록
 Google Search Console의 과정과 그냥 똑같다. 구글링해보자.
 
 [출처](https://velog.io/@eona1301/Github-Blog-%EA%B2%80%EC%83%89%EC%B0%BD-%EB%85%B8%EC%B6%9C%EC%8B%9C%ED%82%A4%EA%B8%B0)
-[출저](https://khs613.github.io/github/google-search-sitemap/)
+
+[출처](https://khs613.github.io/github/google-search-sitemap/)
