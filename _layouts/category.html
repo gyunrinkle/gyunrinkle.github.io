@@ -4,7 +4,7 @@ layout: page
 
 {{ content }}
 
-{% assign CATEGORY = page.category | default: page.title %}
+{% assign CATEGORY = page.categories | default: page.title %}
 {% assign posts = site.categories[CATEGORY] %}
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
