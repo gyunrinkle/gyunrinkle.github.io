@@ -40,7 +40,7 @@ navbar-links:
     - Algorithms: "algorithms"
     - OS: "os"
   ETC:
-    - LIFE: "life"
+    - LIFE: "html-files/life"
 
 ################
 # --- Logo --- #
