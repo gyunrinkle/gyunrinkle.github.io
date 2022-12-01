@@ -114,7 +114,7 @@ liquid template을 이용하여, 위와 같이 `robots.txt`를 작성하여, roo
 Google Search Consoel -> sitemaps 페이지에서 본인 `sitemap.xml`을 등록해준다.
 처음 등록 시에는 실패/가져올 수 없음이라고 뜬다고 한다. 기다려 보자
 
-# Naver
+# Naver Search Advisor
 
 Google Search Console의 과정과 그냥 똑같다. 구글링해보자.
 
