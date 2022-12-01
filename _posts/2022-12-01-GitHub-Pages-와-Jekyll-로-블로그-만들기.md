@@ -418,7 +418,7 @@ plugins:
 ### `<tag>.html`(tag= jekyll)
 
 {% raw %}
-```html
+```ruby
 ---
 layout: page
 title: Jekyll
