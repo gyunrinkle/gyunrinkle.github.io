@@ -1,6 +1,5 @@
 ---
 layout: category
-title: ETC
+title: etc
 subtitle: ETC Category
-categories: [etc]
 ---
