@@ -24,6 +24,7 @@ navbar-links:
   web dev: "categories/web-dev"
   cs: "categories/computer-scicence"
   etc: "categories/etc"
+  tags: "tags"
 
 ################
 # --- Logo --- #
