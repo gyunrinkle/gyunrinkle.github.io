@@ -5,7 +5,7 @@ subtitle: 짜증나는 Liquid Template
 tags: [liquid, jekyll, html]
 comments: true
 sitemap:
-	changefreq: daily
+  changefreq: daily
 ---
 
 ### Notification

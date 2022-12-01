@@ -5,7 +5,7 @@ subtitle: 구글링할 때 내 블로그가 나오길...
 tags: [blog, liquid, jekyll]
 comments: true
 sitemap:
-	changefreq: daily
+  changefreq: daily
 ---
 
 # 검색창에 어떻게 노출 시킬까?
@@ -120,3 +120,5 @@ Google Search Console의 과정과 그냥 똑같다. 구글링해보자.
 [출처](https://velog.io/@eona1301/Github-Blog-%EA%B2%80%EC%83%89%EC%B0%BD-%EB%85%B8%EC%B6%9C%EC%8B%9C%ED%82%A4%EA%B8%B0)
 
 [출처](https://khs613.github.io/github/google-search-sitemap/)
+
+[출처](http://jinyongjeong.github.io/2017/01/13/blog_make_searched/)
