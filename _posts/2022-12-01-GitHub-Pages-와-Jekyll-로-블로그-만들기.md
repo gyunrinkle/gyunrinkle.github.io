@@ -417,9 +417,8 @@ plugins:
 
 ### `<tag>.html`(tag= jekyll)
 
-~~~
+```html
 ---
-
 layout: page
 title: Jekyll
 ---
@@ -449,6 +448,8 @@ jekyll
     {%- endfor -%}
   </div>
 </div>
+```
+
 ~~~
 
 포스트에 댓글을 달게 하고 싶어서, giscus를 도입했다. giscus 관련 설명은 다른 블로그 포스트에 자세히 설명돼 있다. (추후에 필자가 따로 giscus 관련 포스트를 게재하고, 이 포스트에 링크를 걸도록 하겠다.)
