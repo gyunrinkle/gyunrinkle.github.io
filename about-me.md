@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: about-me
 subtitle: 참치 개발자
 ---
 # Portfolio
