@@ -4,7 +4,7 @@ title: GitHub Pages 와 Jekyll 로 블로그 만들기
 subtitle: 내 마음대로 블로그 커스터마징 하기
 gh-repo: gyunrinkle/gyunrinkle.github.io
 gh-badge: [star, fork, follow]
-tags: [blog]
+tags: [blog, liquid, html, css]
 comments: true
 ---
 
@@ -403,3 +403,4 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 ```
+필자는 nav-bar, aboutme, giscus, footer의 SNS연락처 부분을 수정했다. nav-bar에는 포스트의 태그별로 메뉴를 구성하였다. 태그별 메뉴를 클릭하면, 그 tag에 해당하는 포스트를 모아서 보여준다. 이는 root directory(`/`)에 `<tag>.html`을 추가하여 구성하였다. 각 html파일에는 liquid script를 사용하여, tag별 포스트를 렌더링하였다. 그리고 웹사이트 기본 폰트가 마음에 영 들지 않아서, site-css로 `custom-style.css`를 추가했다.

@@ -23,6 +23,7 @@ navbar-links:
   About Me: "aboutme"
   WEB:
     - BLOG: "blog"
+    - JEKYLL: "jekyll"
     - LIQUID: "liquid"
     - SPRING-BOOT: "spring-boot"
     - REACT: "react"
