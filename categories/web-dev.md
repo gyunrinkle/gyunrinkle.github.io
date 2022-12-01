@@ -2,5 +2,5 @@
 layout: category
 title: web-dev
 subtitle: Web Dev Category
-permalink: /:basename/
+permalink: /web-dev/
 ---
