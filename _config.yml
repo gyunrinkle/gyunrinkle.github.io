@@ -30,6 +30,7 @@ navbar-links:
     - JS: "js"
     - HTML: "html"
     - CSS: "css"
+    - POST-TEMPLATE: "post-template"
   GAME:
     - UNITY: "unity"
   PS: 
