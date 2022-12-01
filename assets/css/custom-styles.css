@@ -5,15 +5,9 @@
 }
 
 code,
-kbd,
-pre,
-samp {
-    font-family: "IBM Plex Mono", "Noto Sans Mono", monospace !important;
-}
-
-kbd span,
-pre span,
-samp span {
+kbd *,
+pre *,
+samp * {
     font-family: "IBM Plex Mono", "Noto Sans Mono", monospace !important;
 }
 
