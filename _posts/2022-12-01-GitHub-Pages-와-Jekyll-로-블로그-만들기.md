@@ -413,7 +413,7 @@ plugins:
 # 2fc73a3a967e97599c9763d05e564189
 ```
 
-필자는 nav-bar, aboutme, giscus, footer의 SNS연락처 부분을 수정했다. nav-bar에는 포스트의 태그별로 메뉴를 구성하였다. 태그별 메뉴를 클릭하면, 그 tag에 해당하는 포스트를 모아서 보여준다. 이는 root directory(`/`)에 `<tag>.html`을 추가하여 구성하였다. 각 html파일에는 liquid script를 사용하여, tag별 포스트를 렌더링하였다. 
+필자는 nav-bar, aboutme, giscus, footer의 SNS연락처 부분을 수정했다. nav-bar에는 포스트의 태그별로 메뉴를 구성하였다. 태그별 메뉴를 클릭하면, 그 tag에 해당하는 포스트를 모아서 보여준다. 이는 root directory(`/`)에 `<tag>.html`을 추가하여 구성하였다. 각 html파일에는 liquid template을 사용하여, tag별 포스트를 렌더링하였다. 
 
 ### `<tag>.html`(tag= jekyll)
 
