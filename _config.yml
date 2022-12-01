@@ -22,23 +22,23 @@ author: Gyunseo Lee
 navbar-links:
   About Me: "aboutme"
   WEB:
-    - JEKYLL: "jekyll"
-    - LIQUID: "liquid"
-    - SPRING-BOOT: "spring-boot"
-    - REACT: "react"
-    - JS: "js"
-    - HTML: "html"
-    - CSS: "css"
-    - POST-TEMPLATE: "post-template"
+    - JEKYLL: "web/jekyll"
+    - LIQUID: "web/liquid"
+    - SPRING-BOOT: "web/spring-boot"
+    - REACT: "web/react"
+    - JS: "web/js"
+    - HTML: "web/html"
+    - CSS: "web/css"
+    - POST-TEMPLATE: "web/post-template"
   GAME:
-    - UNITY: "unity"
+    - UNITY: "game/unity"
   PS: 
-    - BOJ: "boj"
-    - LEETCODE: "leetcode"
+    - BOJ: "ps/boj"
+    - LEETCODE: "ps/leetcode"
   CS:
-    - DataStructure: "data-structure"
-    - Algorithms: "algorithms"
-    - OS: "os"
+    - DATA-STRUCTURE: "cs/data-structure"
+    - AlGORITHMS: "cs/algorithms"
+    - OS: "cs/os"
   ETC:
     - LIFE: "html-files/life"
 
