@@ -417,7 +417,7 @@ plugins:
 
 ### `<tag>.html`(tag= jekyll)
 
-```html
+```ruby
 ---
 layout: page
 title: Jekyll
@@ -430,23 +430,23 @@ jekyll
 {%- endcapture -%}
 
 <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag
-    -}}&nbsp;({{site.tags[tag].size}})</a>
+  -}}&nbsp;({{site.tags[tag].size}})</a>
 
 <div id="full-tags-list">
-    <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-    </h2>
-    <div class="post-list">
-        {%- for post in site.tags[tag] -%}
-        <div class="tag-entry">
-            <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
-            <div class="entry-date">
-                <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
-            </div>
-        </div>
-        {%- endfor -%}
+  <h2 id="{{- tag -}}" class="linked-section">
+    <i class="fas fa-tag" aria-hidden="true"></i>
+    &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+  </h2>
+  <div class="post-list">
+    {%- for post in site.tags[tag] -%}
+    <div class="tag-entry">
+      <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
+      <div class="entry-date">
+        <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+      </div>
     </div>
+    {%- endfor -%}
+  </div>
 </div>
 ```
 
