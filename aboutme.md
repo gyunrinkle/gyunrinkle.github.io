@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: 성장하는 개발자
+subtitle: 참치 개발자
 ---
 # Portfolio
 ## Game
