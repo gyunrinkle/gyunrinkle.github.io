@@ -6,6 +6,7 @@ layout: page
 
 {% assign CATEGORY = page.category | default: page.title %}
 {% assign posts = site.categories.CATEGORY %}
+<script>console.log({{ posts }});</script>
 <div>{{ posts }}</div>
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
