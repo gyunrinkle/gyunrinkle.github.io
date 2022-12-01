@@ -10,7 +10,7 @@ comments: true
 # Table of Contents
 
 - [사라진 균서 닷컴](#역사의-뒤안길로-사라진-균서닷컴)
-- [GitHub Pages와 Jekyll을 쓰는 이유](#그래서-왜-github-pages와-jekyll-)
+- [GitHub Pages와 Jekyll을 쓰는 이유](#그래서-왜-github-pages와-jekyll)
 - [블로그 만들기](#본격적으로-블로그-만들기)
 - [참고](#참고)
 
