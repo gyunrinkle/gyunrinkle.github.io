@@ -36,6 +36,7 @@ navbar-links:
     - BOJ: "boj"
     - LEETCODE: "leetcode"
   CS:
+    - DataStructure: "data-structure"
     - Algorithms: "algorithms"
     - OS: "os"
   ETC:
