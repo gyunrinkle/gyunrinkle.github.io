@@ -120,14 +120,24 @@ author: Gyunseo Lee
 
 navbar-links:
   About Me: "aboutme"
-  Devlog:
-    - WEB: "web"
-    - GAME: "game"
+  WEB:
+    - BLOG: "blog"
+    - LIQUID: "liquid"
+    - SPRING-BOOT: "spring-boot"
+    - REACT: "react"
+    - JS: "js"
+    - HTML: "html"
+    - CSS: "css"
+  GAME:
+    - UNITY: "unity"
   PS: 
-    - 백준(BOJ): "boj"
+    - BOJ: "boj"
     - LEETCODE: "leetcode"
   CS:
-    - 운영체제(OS): "os"
+    - Algorithms: "algorithms"
+    - OS: "os"
+  ETC:
+    - LIFE: "life"
 
 ################
 # --- Logo --- #
@@ -327,9 +337,9 @@ site-css:
 giscus:
  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
  repository: "gyunrinkle/gyunrinkle.github.io" # GitHub username/repository eg. "daattali/beautiful-jekyll"
- repository-id: abc_123 # ID of your repository, retrieve this info from https://giscus.app
+ repository-id: R_kgDOIh9wsA # ID of your repository, retrieve this info from https://giscus.app
  category: Announcements # Category name of your GitHub Discussion posts
- category-id: abc_123 # ID of your category, retrieve this info from https://giscus.app
+ category-id: DIC_kwDOIh9wsM4CS2N3 # ID of your category, retrieve this info from https://giscus.app
  mapping: pathname
  reactions-enabled: 1
  emit-metadata: 0
