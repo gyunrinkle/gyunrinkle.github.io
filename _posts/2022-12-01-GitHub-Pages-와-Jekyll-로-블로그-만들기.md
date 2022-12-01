@@ -415,18 +415,18 @@ plugins:
 
 필자는 nav-bar, aboutme, giscus, footer의 SNS연락처 부분을 수정했다. nav-bar에는 포스트의 태그별로 메뉴를 구성하였다. 태그별 메뉴를 클릭하면, 그 tag에 해당하는 포스트를 모아서 보여준다. 이는 root directory(`/`)에 `<tag>.html`을 추가하여 구성하였다. 각 html파일에는 liquid script를 사용하여, tag별 포스트를 렌더링하였다. 
 
-### `<tag>.html`
+### `<tag>.html`(tag= jekyll)
 
 ```ruby
 ---
 layout: page
-title: tag
+title: Jekyll
 ---
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
 {%- capture tag -%}
-tag
+jekyll
 {%- endcapture -%}
 
 <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag
