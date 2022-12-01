@@ -30,7 +30,7 @@ comments: true
 
 ## 도메인이 느낌있다.
 
-&lt;GitHub Username&gt;.github.io 형태의 도메인이 그냥 개발자 테크 블로그스럽고, 멋있어 보였다. 실제로 백준 문제나 코딩하다가 구글링 했을 때, 도메인이 github.io이면 왠지 모르게 믿음직스러웠다.
+`<GitHub Username>.github.io` 형태의 도메인이 그냥 개발자 테크 블로그스럽고, 멋있어 보였다. 실제로 백준 문제나 코딩하다가 구글링 했을 때, 도메인이 github.io이면 왠지 모르게 믿음직스러웠다.
 
 ## 남들이 만들어 놓은 Jekyll Theme
 
