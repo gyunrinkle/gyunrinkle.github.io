@@ -83,7 +83,7 @@ liquid template을 이용하여 위와 같이 `sitemap.xml`을 작성하여, roo
 
 ![sitemap-xml 결과](../assets/img/2022-12-01-검색창에-GitHub-Pages-노출-시키기/sitemap-xml-결과.png)
 
-그리고 `https://<GitHub Username>.github.io/sitemap.xml`로 접속을 했을 때, 위의 사진과 같이 liquid template 오류 없이 잘 실행되어, 블로그 post url과 마지막 수정시간이 잘 떠야 한다. 잘 뜬다면, `sitemap.xml`이 잘 작성된 것이다.
+그리고 `https://<GitHub Username>.github.io/sitemap.xml`로 접속을 했을 때, 위의 사진과 같이 liquid template 오류 없이 잘 실행되어, 블로그 post url과 마지막 수정시간 등이 잘 떠야 한다. 잘 뜬다면, `sitemap.xml`이 잘 작성된 것이다.
 
 # `robots.txt` 작성하기
 
@@ -91,7 +91,7 @@ liquid template을 이용하여 위와 같이 `sitemap.xml`을 작성하여, roo
 ```
 User-agent: *
 Allow: /
-Sitemap: https://gyunrinkle.github.io/sitemap.xml
+Sitemap: https://<GitHub Username>.github.io/sitemap.xml
 ```
 {% endraw %}
 
