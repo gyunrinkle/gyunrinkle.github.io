@@ -2,7 +2,7 @@
 layout: post
 title: 검색창에 GitHub Pages 노출 시키기
 subtitle: 구글링할 때 내 블로그가 나오길...
-tags: [blog]
+tags: [blog, liquid, jekyll]
 comments: true
 ---
 
@@ -88,12 +88,10 @@ liquid template을 이용하여 위와 같이 `sitemap.xml`을 작성하여, roo
 # `robots.txt` 작성하기
 
 {% raw %}
-```ruby
+```
 User-agent: *
-
 Allow: /
-
-Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }}
+Sitemap: https://gyunrinkle.github.io/sitemap.xml
 ```
 {% endraw %}
 
