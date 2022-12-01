@@ -24,10 +24,3 @@ samp * {
 .fab {
     font-family: "Font Awesome 5 Brands" !important;
 }
-
-@media(prefers-color-scheme:dark) {
-    body {
-        background-color: grey;
-        color: white;
-    }
-}
