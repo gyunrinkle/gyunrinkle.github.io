@@ -87,40 +87,41 @@ sitemap:
 # Python Code
 
 ```python
-infinity = 10 ** 9  # 무한을 대충 10억으로 잡는다  
-  
-S = set()  # 방문한 노드들의 집합  
-Q = set(['A', 'B', 'C', 'D', 'E', 'F'])  # 방문안한 노드들의 집합  
-d = {'A': infinity, 'B': infinity, 'C': infinity, 'D': infinity, 'E': infinity,  
-     'F': infinity}  # 최단 거리를 메모하는 딕셔너리 (초기 값은 모두 무한대)  
-G = {'A': [('B', 10), ('C', 30), ('D', 15)], 'B': [('E', 20)], 'C': [('F', 5)], 'D': [('C', 5), ('F', 20)],  
-     'E': [('F', 20)], 'F': [('D', 20)]}  # 그래프에서 노드들의 관계를 나타낸 딕셔너리  
-  
-  
-def dijkstra(source):  
-    # 출발지에서 출발지까지의 최단 거리는 0이다.  
-    d[source] = 0  
-  
-    # Q가 공집합이 아니면  
-    while Q:  
-        # Q의 남아 있는 원소들 중에서 가장 작은 최단 거리를 가진 노드를 u라고 선언  
-        u = min({q: d[q] for q in Q}, key=lambda x: d[x])  
-  
-        # u를 Q에서 제거  
-        Q.remove(u)  
-        # u를 S에 추가ㄴ  
-        S.add(u)  
-  
-        for neighbor, w in G[u]:  
-            alt = d[u] + w  
-            if alt < d[neighbor]:  
-                d[neighbor] = alt  
-  
-  
-dijkstra('A')  
-print(f'S: {S}')  
-print(f'Q: {Q}')  
+infinity = 10 ** 9  # 무한을 대충 10억으로 잡는다
+
+S = set()  # 방문한 노드들의 집합
+Q = set(['A', 'B', 'C', 'D', 'E', 'F'])  # 방문안한 노드들의 집합
+d = {'A': infinity, 'B': infinity, 'C': infinity, 'D': infinity, 'E': infinity,
+     'F': infinity}  # 최단 거리를 메모하는 딕셔너리 (초기 값은 모두 무한대)
+G = {'A': [('B', 10), ('C', 30), ('D', 15)], 'B': [('E', 20)], 'C': [('F', 5)], 'D': [('C', 5), ('F', 20)],
+     'E': [('F', 20)], 'F': [('D', 20)]}  # 그래프에서 노드들의 관계를 나타낸 딕셔너리
+
+
+def dijkstra(source):
+    # 출발지에서 출발지까지의 최단 거리는 0이다.
+    d[source] = 0
+
+    # Q가 공집합이 아니면
+    while Q:
+        # Q의 남아 있는 원소들 중에서 가장 작은 최단 거리를 가진 노드를 u라고 선언
+        u = min({q: d[q] for q in Q}, key=lambda x: d[x])
+
+        # u를 Q에서 제거
+        Q.remove(u)
+        # u를 S에 추가
+        S.add(u)
+
+        for neighbor, w in G[u]:
+            alt = d[u] + w
+            if alt < d[neighbor]:
+                d[neighbor] = alt
+
+
+dijkstra('A')
+print(f'S: {S}')
+print(f'Q: {Q}')
 print(f'd: {d}')
+
 ```
 
 # 출처
