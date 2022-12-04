@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Windows "Docker Desktop failed to start" 오류
-subtitle: "%appdata%"의 "settings.json"을 삭제하자
+title: Windows 'Docker Desktop failed to start' 오류
+subtitle: 테스트
 categories: [etc]
 tags: [docker]
 comments: true
