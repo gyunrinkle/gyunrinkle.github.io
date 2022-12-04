@@ -94,7 +94,7 @@ liquid template을 이용하여 위와 같이 `sitemap.xml`을 작성하여, roo
 ```
 User-agent: *
 Allow: /
-Sitemap: https://<GitHub Username>.github.io/sitemap.xml
+Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }}
 ```
 {% endraw %}
 
@@ -125,3 +125,5 @@ Google Search Console의 과정과 그냥 똑같다. 구글링해보자.
 [출처](https://khs613.github.io/github/google-search-sitemap/)
 
 [출처](http://jinyongjeong.github.io/2017/01/13/blog_make_searched/)
+
+[출처](https://yammong.github.io/blog/Githubio%EA%B5%AC%EA%B8%80%EA%B2%80%EC%83%89%EB%85%B8%EC%B6%9C%EC%8B%9C%ED%82%A4%EA%B8%B0)
