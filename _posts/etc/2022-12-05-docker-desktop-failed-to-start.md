@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows 'Docker Desktop failed to start' 오류
+title: Windows Docker Desktop failed to start 오류
 subtitle: ??
 categories: [etc]
 tags: [docker]
