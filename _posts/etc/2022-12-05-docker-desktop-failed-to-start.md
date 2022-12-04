@@ -66,3 +66,7 @@ wsl -l -v
 ```powershell
 winget install -e --id Docker.DockerDesktop
 ```
+
+# 윈도우 명령어 참고
+
+[Microsoft WSL 기본 명령어 공식 문서]()
