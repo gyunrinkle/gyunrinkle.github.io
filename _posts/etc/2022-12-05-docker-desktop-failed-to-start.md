@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows "Docker Desktop failed to start" 오류
-subtitle: 삭제했다가 다시 깔자...
+subtitle: Docker관련 WSL배포판을 삭제하자...
 categories: [etc]
 tags: [docker]
 comments: true
@@ -61,7 +61,8 @@ wsl --unregister docker-desktop
 wsl -l -v
 ```
 그러면 docker와 관련된 wsl배포판이 다 사라진다.
-다시 winget으로 Docker Desktop을 설치하자
+
+다시 winget으로 Docker Desktop을 설치하고, 사용을 하면 된다.
 ```powershell
 winget install -e --id Docker.DockerDesktop
 ```
