@@ -48,10 +48,13 @@ sitemap:
 
 이제 루프가 반복적으로 작동하는 방법을 설명한다. 밑의 그림들 또한 루프 안에서 알고리즘이 진행되는 순간들을 반복 설명한다.
 
-!(https://w.namu.la/s/a915731233ba006e765c8bce2fd56cdb0dda05fe2c3cab1020b4f0a3031d58d208973d4034e6e1d8e0bf73a8aeabec275b163417c9d7cdac22080413e1e126a2d4b5ef57046844ce0f443cabcd3f9e168a43bdca973f23fd72c695bed314eeda)
+![](https://w.namu.la/s/a915731233ba006e765c8bce2fd56cdb0dda05fe2c3cab1020b4f0a3031d58d208973d4034e6e1d8e0bf73a8aeabec275b163417c9d7cdac22080413e1e126a2d4b5ef57046844ce0f443cabcd3f9e168a43bdca973f23fd72c695bed314eeda)
 
 -   이전에 설명했듯이, 방문할 노드는 Q에 남아있는 노드들 중 `d[N]` 값이 제일 작은 것으로 선택된다. 따라서, `Q = {B, C, D, E, F}` 중 B가 `d[B] = 10`으로 제일 작은 값을 가지므로, B를 방문하여 S에 추가하고 Q에서 제거한다.
 -   이제, B의 이웃 노드들을 모두 탐색하여 거리를 재고 `d[N]`에 기록한다. B의 이웃 노드는 E뿐이므로, `d[E]` 값이 무한에서 `d[B]+(B와 E 사이의 값 20) = 30` 으로 업데이트된다. 여기서 `d[B]` 값을 더하는 이유는 **출발지부터의** 거리값을 재기 위해서다.
+
+# 4.**더 빠른 경로를 발견한 경우**
+!(https://w.namu.la/s/12e2bca491edeed1c5d1e6c9b5c13fd91973b580d68f8ff3a0997395d82f025ae46b7e5a1f66d67bc63127f9a742ddbe748e9c6cdd27faaa16bde9f88ab9855278ac766a7f62b0578d9c21e60f687c6629b8d000fe977014d2a90188013883f2)
 
 # Python Code
 
