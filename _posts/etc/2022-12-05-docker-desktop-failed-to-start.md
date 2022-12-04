@@ -48,3 +48,20 @@ wsl -t docker-desktop
 > It terminated docker-desktop and made the problem gone
 
 > [출처](https://stackoverflow.com/questions/67406780/not-able-to-start-docker-desktop-in-windows/73733654#73733654)
+
+나도 똑같이 Powershell에서 `wsl -l -v`커맨드를 입력하니, 다음과 같이 나왔다.
+
+![](/assets/img/2022-12-05-docker-desktop-failed-to-start/powershell-오류-화면.png)
+
+그리고 다음 명령어를 입력했다.
+
+```powershell
+wsl --unregister docker-desktop-data
+wsl --unregister docker-desktop
+wsl -l -v
+```
+그러면 docker와 관련된 wsl배포판이 다 사라진다.
+다시 winget으로 Docker Desktop을 설치하자
+```powershell
+winget install -e --id Docker.DockerDesktop
+```
