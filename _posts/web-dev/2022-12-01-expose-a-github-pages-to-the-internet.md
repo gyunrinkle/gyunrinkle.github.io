@@ -94,7 +94,7 @@ liquid template을 이용하여 위와 같이 `sitemap.xml`을 작성하여, roo
 ```
 User-agent: *
 Allow: /
-Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }}
+Sitemap: https://gyunrinkle.github.io/sitemap.xml
 ```
 {% endraw %}
 
