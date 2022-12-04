@@ -53,7 +53,7 @@ wsl -t docker-desktop
 
 ![](/assets/img/2022-12-05-docker-desktop-failed-to-start/powershell-오류-화면.png)
 
-그리고 다음 명령어를 입력했다.
+그리고 다음 명령어를 입력했다. (`wsl -t docker-desktop`을 했더니 나는 왠지 모르게 오류가 났다. 아마 이미 Docker Desktop을 Local에서 삭제한 상태여서 그랬던 거 같다. 그래서 나는 아예 Docker관련 WSL 배포판을 다 삭제하기로 했다.)
 
 ```powershell
 wsl --unregister docker-desktop-data
