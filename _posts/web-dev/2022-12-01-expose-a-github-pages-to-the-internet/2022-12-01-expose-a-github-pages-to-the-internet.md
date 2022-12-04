@@ -23,25 +23,25 @@ Google Search Console에 블로그 URL을 등록해서, 구글 웹 크롤러가 
 
 <https://search.google.com/search-console/about>에 접속을 한다.
 
-![Google Search Console](../assets/img/2022-12-01-expose-a-github-pages-to-the-internet/google-search-console.png)
+![Google Search Console](google-search-console.png)
 
 시작하기 버튼을 눌러준다.
 
-![URL 접두어 선택](../assets/img/2022-12-01-expose-a-github-pages-to-the-internet/url-접두어.png)
+![URL 접두어 선택](url-접두어.png)
 
 필자는 `<GitHub Username>.github.io` URL을 쓰기 때문에 접두어를 선택했다. 
 
-![html 다운로드](../assets/img/2022-12-01-expose-a-github-pages-to-the-internet/html-다운로드.png)
+![html 다운로드](html-다운로드.png)
 
 URL에 본인 블로그 URL을 입력하면, 다음과 같은 모달창이 뜬다. html파일을 다운로드하고, 본인 블로그 repository의 root directory(`/`)에 저장을 한다. 그리고 원격 저장소로 push한다.
 
 
-![html 결과](../assets/img/2022-12-01-expose-a-github-pages-to-the-internet/html-결과.png)
+![html 결과](html-결과.png)
 
 
 `<GitHub Username>.github.io/<html파일 이름>`으로 접속을 했을 때, 위의 사진과 같이 잘 뜬다면, html파일이 잘 등록이 된 것이다.
 
-![소유권 확인](../assets/img/2022-12-01-expose-a-github-pages-to-the-internet/소유권-확인.png)
+![소유권 확인](소유권-확인.png)
 
 아까 떴던 모달창의 확인 버튼을 누르면, `<Github Username>.github.io`에 Google Search Console이 줬던 html파일이 잘 등록이 됐는지, 확인하게 된다. 그리고 html파일이 웹사이트에 등록된 것이 확인이 되면, 위의 사진과 같은 결과창이 나온다. 웹사이트에 대한 소유권이 확인된 것이다.
 
@@ -84,7 +84,7 @@ layout: null
 
 liquid template을 이용하여 위와 같이 `sitemap.xml`을 작성하여, root directory(`/`)에 저장하고, 원격 저장소에 push하자. 
 
-![sitemap-xml 결과](../assets/img/2022-12-01-expose-a-github-pages-to-the-internet/sitemap-xml-결과.png)
+![sitemap-xml 결과](sitemap-xml-결과.png)
 
 그리고 `https://<GitHub Username>.github.io/sitemap.xml`로 접속을 했을 때, 위의 사진과 같이 liquid template 오류 없이 잘 실행되어, 블로그 post url과 마지막 수정시간 등이 잘 떠야 한다. 잘 뜬다면, `sitemap.xml`이 잘 작성된 것이다.
 
@@ -100,7 +100,7 @@ Sitemap: https://<GitHub Username>.github.io/sitemap.xml
 
 liquid template을 이용하여, 위와 같이 `robots.txt`를 작성하여, root directory(`/`)에 저장하고, 원격 저장소에 push 하자.
 
-![robots-txt 결과](../assets/img/2022-12-01-expose-a-github-pages-to-the-internet/robots-txt-결과.png)
+![robots-txt 결과](robots-txt-결과.png)
 
 
 `https://<GitHub Username>.github.io/robots.txt`로 접속을 했을 때, 위의 사진과 같이 내용이 잘 나오면, `robots.txt`도 웹사이트에 등록이 잘 된 것이다.
@@ -108,7 +108,7 @@ liquid template을 이용하여, 위와 같이 `robots.txt`를 작성하여, roo
 
 # Google Search Console에 sitemap 제출
 
-![sitemap 제출 결과](../assets/img/2022-12-01-expose-a-github-pages-to-the-internet/sitemap-제출.png)
+![sitemap 제출 결과](sitemap-제출.png)
 
 
 Google Search Consoel -> sitemaps 페이지에서 본인 `sitemap.xml`을 등록해준다.
