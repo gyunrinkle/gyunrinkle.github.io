@@ -11,7 +11,9 @@ sitemap:
 
 # 다익스트라 알고리즘이란?
 
-정의는 [나무위키](https://namu.wiki/w/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)나 [위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%81%AC%EC%8A%A4%ED%8A%B8%EB%9D%BC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)를 확인해보자. 아니면 유명한 전공 서적인 `Introduction to Algorithms`에서도 친절히 정의가 나와있다.
+정의는 [나무위키](https://namu.wiki/w/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)나 [위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%81%AC%EC%8A%A4%ED%8A%B8%EB%9D%BC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)를 확인해보자. 아니면 유명한 전공 서적인 `Introduction to Algorithms`에서도 친절히 정의가 나와있다. 단 중요한 조건이 한 개가 있다.
+
+- **간선의 가중치가 단 한 개라도 음수이면 안된다.**
 
 # 다익스트라 알고리즘 그림 설명으로 확인 해보자
 
