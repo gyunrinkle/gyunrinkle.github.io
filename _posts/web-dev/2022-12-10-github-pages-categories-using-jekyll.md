@@ -9,6 +9,7 @@ sitemap:
   changefreq: daily
 ---
 
-# 내 블로그에는 category가 없다... 만들고 싶다...
+{: .box-note}
+**Note:** 제 Blog는 `Beatiful Jekyll`Theme를 기반으로 만들어졌습니다
+# Blog 우측 상단 Navbar에 Category를 누르면 Category에 속한 Posts들이 뜨도록 하고 싶다
 
-그래서 구글링을 통해서 직접 만들었다.
