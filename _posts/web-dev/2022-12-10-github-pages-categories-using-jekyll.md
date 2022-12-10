@@ -1,13 +1,10 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-categories: [etc]
-tags: [test, post-template]
+title: Jeykyll을 이용해 Github Pages에 Categories 추가하기
+subtitle: Liquid Template 빡세다
+categories: [web-dev]
+tags: [jekyll, liquid, blog, html]
 comments: true
-sitemap:
 sitemap:
   changefreq: daily
 ---
