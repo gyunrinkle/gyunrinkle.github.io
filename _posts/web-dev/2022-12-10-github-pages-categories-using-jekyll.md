@@ -21,6 +21,7 @@ sitemap:
 
 [stack overflow QnA](https://stackoverflow.com/questions/56065176/how-to-paginate-categories-in-jekyll-with-github-pages)
 스택오버플로우 QnA에 다음과 같이 말한다.
+
 > Paginate only paginates all posts and not by category or tag.
 
 >Paginate V2 does this even for collections. But you cannot run this plugin on Github pages ([allowed plugins](https://pages.github.com/versions/)).
@@ -30,3 +31,6 @@ sitemap:
 >1.  publish your code in a branch, generate your site locally (or with a service like [Travis Continuous Integration](https://github.com/marketplace/travis-ci) that is free for open source projects) and publish (or let your CI publish) your generated code in another branch.
 >  
 >2.  use a modern hosting provider like [Netlify](https://netlify.com/) that allows you to use any plugin.
+
+그래서 Paginate는 포기했고, 그냥 Category Page를 클릭하면 Category에 속한 글들이 가장 최신 글부터 주르륵 뜨도록 했다.
+
