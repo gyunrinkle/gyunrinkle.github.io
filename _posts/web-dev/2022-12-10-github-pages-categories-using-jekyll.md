@@ -155,3 +155,12 @@ layout: page
 </ul>
 ```
 {% endraw %}
+
+위 코드에서 아래 부분을 눈 여겨 보자.
+{% raw %}
+```ruby
+{% assign CATEGORY = page.title %}
+{% assign posts = site.categories[CATEGORY] %}
+```
+{% endraw %}
+

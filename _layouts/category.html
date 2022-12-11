@@ -4,6 +4,7 @@ layout: page
 
 {{ content }}
 
+<!-- 만들어질 category page의 title이름을 category와 일치시켜 줘서, 그 value를 사용해 category에 해당하는 글을 긁어온다. -->
 {% assign CATEGORY = page.title %}
 {% assign posts = site.categories[CATEGORY] %}
 
