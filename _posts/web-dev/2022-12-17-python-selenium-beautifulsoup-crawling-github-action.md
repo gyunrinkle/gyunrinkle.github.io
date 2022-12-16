@@ -14,3 +14,4 @@ sitemap:
 <https://chanhuiseok.github.io/posts/git-1/>
 <https://blog.naver.com/statp_r/222168017475>
 <https://velog.io/@king/weather-alert>
+<https://velog.io/@devmin/selenium-crawling-infinite-scroll-click>
