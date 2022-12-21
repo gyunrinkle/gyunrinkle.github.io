@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selenium과 BeautifulSoup으로 웹사이트 크롤링하고, GitHub Action으로 자동화 하기
-subtitle: 내가 왜 컴에듀니온을 한다 했지;;
+subtitle: 셀레니움 어렵다
 gh-repo: gyunrinkle/hello-spring
 gh-badge: [star, fork, follow]
 categories: [web-dev]
