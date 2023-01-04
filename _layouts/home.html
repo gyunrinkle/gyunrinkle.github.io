@@ -86,7 +86,7 @@ layout: page
         <ul class="d-inline list-inline" role="list">
           {% for category in post.categories %}
           <li class="list-inline-item">
-            <a href="{{ '/categories/' | append: category | absolute_url}}">{{- category -}}</a>
+            <a href="{{ category | absolute_url}}">{{- category -}}</a>
           </li>
           {% endfor %}
         </ul>
