@@ -164,3 +164,24 @@ layout: page
 ```
 {% endraw %}
 
+# Post 미리 보기에서 category로 넘어가는 부분 구현 코드
+
+{% raw %}
+```ruby
+			<!-- Categories 삽입 -->
+			{% if post.categories.size > 0 %}
+			<div class="blog-categories">
+				<span>Categories:</span>
+				<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+				<ul class="d-inline list-inline" role="list">
+					{% for category in post.categories %}
+					<li class="list-inline-item">
+						<a href="{{ category | absolute_url}}">{{- category -}}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			<!-- Categories 삽입 -->
+```
+{% endraw %}
