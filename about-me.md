@@ -1,7 +1,7 @@
 ---
 layout: page
 title: about-me
-language: ko
+language: ko-KR
 subtitle: 참치 개발자
 ---
 # Portfolio
