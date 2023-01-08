@@ -3,8 +3,11 @@ layout: page
 title: about-me
 subtitle: 참치 개발자
 ---
+
 # Portfolio
+
 ## Game
+
 - [CatchMouse(쥐를 잡아라!)](https://play.google.com/store/apps/details?id=com.Team_CatchMouse.CatchMouse)
 - [옥영나라를 구해라!](https://play.google.com/store/apps/details?id=com.Comedu_Games.SaveOkyungWorld)
 
@@ -14,7 +17,7 @@ subtitle: 참치 개발자
 
 - 이균서(Gyunseo Lee)
 
-## 이메일(Email): 
+## 이메일(Email):
 
 - rbstj0311@naver.com
 - rbstj0311@g.skku.edu
@@ -37,7 +40,7 @@ subtitle: 참치 개발자
 
 # History
 
-- (2019 ~ now) 성균관대학교 컴퓨터교육과 입학(Major in Computer Education, College of Education, Sungkyunkwan University) 
+- (2019 ~ now) 성균관대학교 컴퓨터교육과 입학(Major in Computer Education, College of Education, Sungkyunkwan University)
 
 - (2020 ~ now) 성균관대학교 소프트웨어학과 복수전공(Double Major in Computer Science, College of Computing, Sungkyunkwan University)
 
@@ -47,8 +50,8 @@ subtitle: 참치 개발자
 
 ## OS
 
-- Linux(Ubuntu), 
-- Windows, 
+- Linux(Ubuntu),
+- Windows,
 - macOS
 
 ## Programming Language
@@ -76,5 +79,5 @@ subtitle: 참치 개발자
 - Spring boot
 
 ## Game Engine
-- Unity
 
+- Unity

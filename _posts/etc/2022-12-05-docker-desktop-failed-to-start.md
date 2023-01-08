@@ -23,7 +23,7 @@ Windows Terminal에서 winget으로Docker Desktop 업데이트 하다가 업데�
 
 개발자들의 최후의 비기 들어갔다. 구글링을 엄청했다. 그랬더니 stackoverflow에 나랑 비슷한 증상을 호소한 사람이 있었다. 그래서 그 분의 해결책을 참고했다.
 
->My Docker Desktop failed to start after I forced it to exit while updating (it stuck during the update that's why I had to do it). No solution on the Internet helped me until I ran into this Powershell command:
+> My Docker Desktop failed to start after I forced it to exit while updating (it stuck during the update that's why I had to do it). No solution on the Internet helped me until I ran into this Powershell command:
 
 ```
 wsl -l -v
@@ -60,9 +60,11 @@ wsl --unregister docker-desktop-data
 wsl --unregister docker-desktop
 wsl -l -v
 ```
+
 그러면 docker와 관련된 wsl배포판이 다 사라진다.
 
 다시 winget으로 Docker Desktop을 설치하고, 사용을 하면 된다.
+
 ```powershell
 winget install -e --id Docker.DockerDesktop
 ```

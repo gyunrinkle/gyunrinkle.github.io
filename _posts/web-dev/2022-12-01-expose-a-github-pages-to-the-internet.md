@@ -11,7 +11,7 @@ sitemap:
 
 # 검색창에 어떻게 노출 시킬까?
 
-Google Search Console에 블로그 URL을 등록해서, 구글 웹 크롤러가 주기적으로 블로그 웹사이트를 크롤링할 수 있게 작업을 해줘야 한다. 
+Google Search Console에 블로그 URL을 등록해서, 구글 웹 크롤러가 주기적으로 블로그 웹사이트를 크롤링할 수 있게 작업을 해줘야 한다.
 
 - Google Search Console(혹은 다른 검색 엔진)에서 제공하는 html 파일
 - `sitemap.xml` (Google 웹크롤러가 주기적으로 어떤 URL들을 크롤링해야 되는지 체크하는 사항을 명시해둔 파일)
@@ -29,15 +29,13 @@ Google Search Console에 블로그 URL을 등록해서, 구글 웹 크롤러가 
 
 ![URL 접두어 선택](/assets/img/2022-12-01-expose-a-github-pages-to-the-internet/url-접두어.png)
 
-필자는 `<GitHub Username>.github.io` URL을 쓰기 때문에 접두어를 선택했다. 
+필자는 `<GitHub Username>.github.io` URL을 쓰기 때문에 접두어를 선택했다.
 
 ![html 다운로드](/assets/img/2022-12-01-expose-a-github-pages-to-the-internet/html-다운로드.png)
 
 URL에 본인 블로그 URL을 입력하면, 다음과 같은 모달창이 뜬다. html파일을 다운로드하고, 본인 블로그 repository의 root directory(`/`)에 저장을 한다. 그리고 원격 저장소로 push한다.
 
-
 ![html 결과](/assets/img/2022-12-01-expose-a-github-pages-to-the-internet/html-결과.png)
-
 
 `<GitHub Username>.github.io/<html파일 이름>`으로 접속을 했을 때, 위의 사진과 같이 잘 뜬다면, html파일이 잘 등록이 된 것이다.
 
@@ -48,6 +46,7 @@ URL에 본인 블로그 URL을 입력하면, 다음과 같은 모달창이 뜬�
 # `sitemap.xml` 작성하기
 
 {% raw %}
+
 ```ruby
 ---
 layout: null
@@ -80,9 +79,10 @@ layout: null
   {% endfor %}
 </urlset>
 ```
+
 {% endraw %}
 
-liquid template을 이용하여 위와 같이 `sitemap.xml`을 작성하여, root directory(`/`)에 저장하고, 원격 저장소에 push하자. 
+liquid template을 이용하여 위와 같이 `sitemap.xml`을 작성하여, root directory(`/`)에 저장하고, 원격 저장소에 push하자.
 
 ![sitemap-xml 결과](/assets/img/2022-12-01-expose-a-github-pages-to-the-internet/sitemap-xml-결과.png)
 
@@ -91,25 +91,24 @@ liquid template을 이용하여 위와 같이 `sitemap.xml`을 작성하여, roo
 # `robots.txt` 작성하기
 
 {% raw %}
+
 ```
 User-agent: *
 Allow: /
 Sitemap: https://gyunrinkle.github.io/sitemap.xml
 ```
+
 {% endraw %}
 
 liquid template을 이용하여, 위와 같이 `robots.txt`를 작성하여, root directory(`/`)에 저장하고, 원격 저장소에 push 하자.
 
 ![robots-txt 결과](/assets/img/2022-12-01-expose-a-github-pages-to-the-internet/robots-txt-결과.png)
 
-
 `https://<GitHub Username>.github.io/robots.txt`로 접속을 했을 때, 위의 사진과 같이 내용이 잘 나오면, `robots.txt`도 웹사이트에 등록이 잘 된 것이다.
-
 
 # Google Search Console에 sitemap 제출
 
 ![sitemap 제출 결과](/assets/img/2022-12-01-expose-a-github-pages-to-the-internet/sitemap-제출.png)
-
 
 Google Search Consoel -> sitemaps 페이지에서 본인 `sitemap.xml`을 등록해준다.
 처음 등록 시에는 실패/가져올 수 없음이라고 뜬다고 한다. 기다려 보자

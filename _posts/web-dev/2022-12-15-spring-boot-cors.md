@@ -10,7 +10,9 @@ comments: true
 sitemap:
   changefreq: daily
 ---
-`controller.java`에 가서 
+
+`controller.java`에 가서
+
 ```java
 @CrossOrigin("*") // 모든 요청에 접근 허용
 @RestController

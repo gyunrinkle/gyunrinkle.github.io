@@ -12,8 +12,9 @@ sitemap:
 ---
 
 `build.gradle`
+
 ```groovy
-implementation 'org.projectlombok:lombok'  
-// annotation processor를 등록해야 배포가 됨  
+implementation 'org.projectlombok:lombok'
+// annotation processor를 등록해야 배포가 됨
 annotationProcessor 'org.projectlombok:lombok'
 ```
