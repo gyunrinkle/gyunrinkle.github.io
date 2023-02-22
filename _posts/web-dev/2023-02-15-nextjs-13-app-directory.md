@@ -10,3 +10,4 @@ sitemap:
 ---
 
 https://beta.nextjs.org/docs/rendering/fundamentals
+https://beta.reactjs.org/learn/conditional-rendering
