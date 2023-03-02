@@ -14,7 +14,7 @@ sitemap:
 # Python Runtime을 여러 개 설치
 ---
 Docker를 쓰는 게 아닌 이상, 일단 Python Runtime을 여러 개 설치해야 한다.
-<python.org/downloads>에서 본인이 원하는 Runtime을 여러 개 설치한다.
+<python.org/downloads>에서 혹은 winget으로 본인이 원하는 Runtime을 여러 개 설치한다.
 필자는 3.11.1을 설치했었는데, stable-diffusion-webui라는 프로젝트가 3.10.6 버전 런타임을 요구해서 3.10.6을 공식 웹사이트에서 Windows용 Installer를 받아서 설치했다.
 설치할 때 `Add to PATH` 는 꼭 체크하자. 그래야 사용자 환경 변수에 Python Runtime이 추가돼서 Powershell에서 바로 쓸 수 있다.
 
