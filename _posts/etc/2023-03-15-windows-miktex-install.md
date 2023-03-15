@@ -12,3 +12,6 @@ sitemap:
 ```powershell
 winget install --exact --id MiKTeX.MiKTeX
 ```
+
+![[Pasted image 20230315165209.png]]
+<https://stackoverflow.com/questions/29240290/pandoc-for-windows-pdflatex-not-found>
