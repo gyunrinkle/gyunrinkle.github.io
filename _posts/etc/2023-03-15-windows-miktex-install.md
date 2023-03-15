@@ -20,3 +20,5 @@ winget install --exact --id MiKTeX.MiKTeX
 ```powrshell
 [WARNING] Missing character: There is no 蹂?pandoc.exe: <stderr>: hPutChar: invalid argument (Invalid argument)
 ```
+
+<https://stackoverflow.com/questions/18178084/pandoc-and-foreign-characters>
