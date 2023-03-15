@@ -18,5 +18,5 @@ winget install --exact --id MiKTeX.MiKTeX
 <https://github.com/jgm/pandoc/issues/8183>
 
 ```powrshell
-
+[WARNING] Missing character: There is no 蹂?pandoc.exe: <stderr>: hPutChar: invalid argument (Invalid argument)
 ```
