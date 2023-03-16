@@ -13,7 +13,7 @@ sitemap:
 winget install --exact --id MiKTeX.MiKTeX
 ```
 
-![](/assets/img/2023-03-15/package_installation.png)
+![](/assets/img/2023-03-15-windows-miktex-install/package_installation.png)
 <https://stackoverflow.com/questions/29240290/pandoc-for-windows-pdflatex-not-found>
 <https://github.com/jgm/pandoc/issues/8183>
 
