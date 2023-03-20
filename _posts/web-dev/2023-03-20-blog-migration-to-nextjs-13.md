@@ -9,6 +9,10 @@ sitemap:
   changefreq: daily
 ---
 
+# Next.js 13 Project 만들기
+```powershell
+npx create-next-app contentlayer-example
+```
 # 참고 자료
 
 - <https://www.youtube.com/watch?v=Gh-AT4p52PI>
