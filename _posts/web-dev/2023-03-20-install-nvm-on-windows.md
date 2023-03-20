@@ -64,3 +64,8 @@ Usage:
 nvm install lts
 nvm ls
 ```
+
+# `nvm use [버전]`으로 버전 고르기
+```powershell
+
+```
