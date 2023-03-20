@@ -13,6 +13,17 @@ sitemap:
 ```powershell
 npx create-next-app contentlayer-example
 ```
+
+# 방금 만들었던 Next.js 13 Project 실행
+
+```powershell
+npm run dev
+```
+
+# Contentlayer 설치
+```powershell
+npm install contentlayer next-contentlayer
+```
 # 참고 자료
 
 - <https://www.youtube.com/watch?v=Gh-AT4p52PI>
