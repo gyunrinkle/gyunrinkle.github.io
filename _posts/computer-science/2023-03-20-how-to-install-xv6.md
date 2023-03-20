@@ -17,6 +17,7 @@ sitemap:
 - docker desktop (wsl2 backend) + vscode devconatiner (ubuntu-22.04 jammy)
 - gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
 - GNU Make 4.3
+---
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt auto-remove -y
 sudo apt install qemu-kvm -y
