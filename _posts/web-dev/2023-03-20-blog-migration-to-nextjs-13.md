@@ -24,6 +24,27 @@ npm run dev
 ```powershell
 npm install contentlayer next-contentlayer
 ```
+
+어 근데? 오류가 난다...
+```
+Conflicting peer dependency: @opentelemetry/api@1.4.1
+node_modules/@opentelemetry/api
+  peerOptional @opentelemetry/api@"^1.4.0" from next@13.2.4
+  node_modules/next
+    next@"13.2.4" from the root project
+    peer next@"^12 || ^13" from next-contentlayer@0.3.0
+    node_modules/next-contentlayer
+      next-contentlayer@"*" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
+```
+
+구글링 해보니깐 `--legacy-peer-deps` 옵션을 `npm install`할 때 붙이라 해서, 붙이고 해결했다...
+```powerhsell
+
+```
 # 참고 자료
 
 - <https://www.youtube.com/watch?v=Gh-AT4p52PI>
