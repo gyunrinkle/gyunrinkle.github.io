@@ -108,6 +108,44 @@ export default withContentlayer({})
 }
 
 ```
+
+# Post Schema 정의하기
+
+`contentlayer.config.js`파일을 만들고 하기와 같이 입력한다.
+```js
+// contentlayer.config.js
+
+import { defineDocumentType, makeSource } from "contentlayer/source-files";
+
+export const Post = defineDocumentType(() => ({
+  name: "Post",
+  filePathPattern: `**/*.md`,
+  fields: {
+    title: {
+      type: "string",
+      description: "The title of the post",
+      required: true,
+    },
+    date: {
+      type: "date",
+      description: "The date of the post",
+      required: true,
+    },
+  },
+  computedFields: {
+    url: {
+      type: "string",
+      resolve: (post) => `/posts/${post._raw.flattenedPath}`,
+    },
+  },
+}));
+
+export default makeSource({
+  contentDirPath: "posts",
+  documentTypes: [Post],
+});
+
+```
 # 참고 자료
 
 - <https://www.youtube.com/watch?v=Gh-AT4p52PI>
