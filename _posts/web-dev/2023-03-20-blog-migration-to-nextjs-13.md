@@ -43,6 +43,69 @@ to accept an incorrect (and potentially broken) dependency resolution.
 
 구글링 해보니깐 `--legacy-peer-deps` 옵션을 `npm install`할 때 붙이라 해서, 붙이고 해결했다...
 ```powerhsell
+ npm install contentlayer next-contentlayer --legacy-peer-deps
+```
+
+# `next.config.mjs` 파일 생성 후 하기와 같이 코드 입력
+```mjs
+// next.config.mjs
+
+import { withContentlayer } from 'next-contentlayer'
+
+export default withContentlayer({})
+```
+
+# `tsconfig.json` 변경
+```json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "contentlayer/generated": ["./.contentlayer/generated"]
+      // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.tsx", "**/*.ts", ".contentlayer/generated"]
+  //                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+}
+```
+`^` 부분을 추가
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".contentlayer/generated"
+  ],
+  "exclude": ["node_modules"]
+}
 
 ```
 # 참고 자료
