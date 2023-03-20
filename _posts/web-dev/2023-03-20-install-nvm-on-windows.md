@@ -58,3 +58,9 @@ Usage:
   nvm [--]version              : Displays the current running version of nvm for Windows. Aliased as v.
 
 ```
+
+# `nvm`으로 node 설치 
+```powershell
+nvm install lts
+nvm ls
+```
