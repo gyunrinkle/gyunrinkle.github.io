@@ -67,5 +67,5 @@ nvm ls
 
 # `nvm use [버전]`으로 버전 고르기
 ```powershell
-
+nvm use 18.15.0
 ```
