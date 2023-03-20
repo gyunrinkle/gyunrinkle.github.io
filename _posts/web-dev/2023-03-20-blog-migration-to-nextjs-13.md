@@ -48,7 +48,7 @@ to accept an incorrect (and potentially broken) dependency resolution.
 
 # `next.config.mjs` 파일 생성 후 하기와 같이 코드 입력
 
-`next.config.js`는 삭제하고,
+`next.config.js`는 삭제하고, `next.config.mjs` 파일을 만들고 하기와 같이 코드 입력
 
 ```mjs
 // next.config.mjs
@@ -64,6 +64,7 @@ export default withContentlayer({
 ```
 
 # `tsconfig.json` 변경
+
 ```json
 {
   "compilerOptions": {
