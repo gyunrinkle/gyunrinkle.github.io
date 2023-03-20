@@ -50,9 +50,14 @@ to accept an incorrect (and potentially broken) dependency resolution.
 ```mjs
 // next.config.mjs
 
-import { withContentlayer } from 'next-contentlayer'
+import { withContentlayer } from "next-contentlayer";
 
-export default withContentlayer({})
+export default withContentlayer({
+  experimental: {
+    appDir: true,
+  },
+});
+
 ```
 
 # `tsconfig.json` 변경
@@ -146,6 +151,9 @@ export default makeSource({
 });
 
 ```
+
+# Post 추가
+
 # 참고 자료
 
 - <https://www.youtube.com/watch?v=Gh-AT4p52PI>
