@@ -21,7 +21,7 @@ sitemap:
 
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt auto-remove -y
-sudo apt install qemu-kvm -y
+sudo apt install qemu-kvm -y # 왜 이렇게 오래 걸리지...
 git clone https://github.com/mit-pdos/xv6-public.git
 cd xv6-public
 make
