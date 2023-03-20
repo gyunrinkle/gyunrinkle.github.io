@@ -18,11 +18,12 @@ sitemap:
 - gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
 - GNU Make 4.3
 ---
+
 ```bash
 sudo apt update -y && sudo apt upgrade -y && sudo apt auto-remove -y
 sudo apt install qemu-kvm -y
 git clone https://github.com/mit-pdos/xv6-public.git
 cd xv6-public
 make
-make qemu-nox
+make qemu-nox # 새로운 window에 띄우고 싶으면 make qemu
 ```
