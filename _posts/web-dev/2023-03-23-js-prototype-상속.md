@@ -40,7 +40,7 @@ console.log(rabbit.jumps); // true
 
 let animal = {
   eats: true,
-  walk() {
+  walk: () => {
     console.log("동물이 걷습니다.");
   },
 };
@@ -61,7 +61,7 @@ console.log(longEar.jumps); // true (rabbit에서 상속받음)
 
 ```
 
-# Prototype Chaining의 제약 사항
+# Prototype Chain의 제약 사항
 
 1. 순환 참조는 허용 X. `__proto__`를 이용해 닫힌 형태로 다른 객체를 참조하면 error 발생
 2. `__proto__`의 값은 객체나 `null`만 가능. 딴 자료형은 무시.
@@ -76,7 +76,7 @@ console.log(longEar.jumps); // true (rabbit에서 상속받음)
 
 let animal = {
   eats: true,
-  walk() {
+  walk: () => {
     /* rabbit은 이제 이 메서드를 사용하지 않습니다. */
   },
 };
@@ -85,7 +85,7 @@ let rabbit = {
   __proto__: animal,
 };
 
-rabbit.walk = function () {
+rabbit.walk = () => {
   console.log("토끼가 깡충깡충 뜁니다.");
 };
 
