@@ -40,7 +40,7 @@ console.log(rabbit.jumps); // true
 
 let animal = {
   eats: true,
-  walk: () => {
+  walk() {
     console.log("동물이 걷습니다.");
   },
 };
@@ -59,6 +59,7 @@ let longEar = {
 longEar.walk(); // 동물이 걷습니다.
 console.log(longEar.jumps); // true (rabbit에서 상속받음)
 
+
 ```
 
 # Prototype Chain의 제약 사항
@@ -76,7 +77,7 @@ console.log(longEar.jumps); // true (rabbit에서 상속받음)
 
 let animal = {
   eats: true,
-  walk: () => {
+  walk() {
     /* rabbit은 이제 이 메서드를 사용하지 않습니다. */
   },
 };
@@ -85,10 +86,11 @@ let rabbit = {
   __proto__: animal,
 };
 
-rabbit.walk = () => {
+rabbit.walk = function () {
   console.log("토끼가 깡충깡충 뜁니다.");
 };
 
 rabbit.walk(); // 토끼가 깡충깡충 뜁니다.
+
 
 ```
