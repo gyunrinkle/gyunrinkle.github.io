@@ -97,5 +97,52 @@ let promise = new Promise((resolve) => {
 
 promise.then(console.log); // 1초 뒤 "완료!" 출력
 
+```
+
+- 에러가 발생한 경우만 다루고 싶다면 `.catch(f)`를 쓰면되는데, `.then(null, f)`와 완벽하게 같다.
+
+```javascript
+"use strict";
+
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => reject(new Error("에러 발생!")), 1000);
+});
+
+// .catch(f)는 promise.then(null, f)과 동일하게 작동합니다
+promise.catch(console.log); // 1초 뒤 "Error: 에러 발생!" 출력
+
+```
+
+```javascript
+"use strict";
+
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => reject(new Error("에러 발생!")), 1000);
+});
+
+// .catch(f)는 promise.then(null, f)과 동일하게 작동합니다
+promise.then(null, console.log); // 1초 뒤 "Error: 에러 발생!" 출력
+
+```
+
+- `try {...} catch {...}`에 `finally` 절이 있는 것처럼, `promise`에도 `finally`절이 있다.
+- `.finally(f)` 호출은 `.then(f, f)`와 유사
+- 그런데 `.finally(f)`는 `.then(f, f)`와 완전히 같지 않음
+
+```javascript
+"use strict";
+
+new Promise((resolve, reject) => {
+  setTimeout(() => resolve("결과"), 2000);
+})
+  .finally(() => console.log("프라미스가 준비되었습니다."))
+  .then((result) => console.log(result)); // <-- .then에서 result를 다룰 수 있음
+
+new Promise((resolve, reject) => {
+  throw new Error("에러 발생!");
+})
+  .finally(() => console.log("프라미스가 준비되었습니다."))
+  .catch((err) => console.log(err)); // <-- .catch에서 에러 객체를 다룰 수 있음
+
 
 ```
