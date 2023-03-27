@@ -22,3 +22,7 @@ winget install --exact --id MiKTeX.MiKTeX
 ```
 
 <https://stackoverflow.com/questions/18178084/pandoc-and-foreign-characters>
+
+```powershell
+pandoc --pdf-engine=xelatex -V CJKmainfont="한글 지원 폰트" test.md -o test.pdf
+```
