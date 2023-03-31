@@ -17,3 +17,4 @@ npm uninstall tsc
 tsc
 ```
 해야 오류가 안 생긴다...
+`tsc`는 `typescript`안에 이미 있다. `tsc` package는 deprecated됐다.
