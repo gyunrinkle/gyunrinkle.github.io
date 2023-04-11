@@ -46,4 +46,4 @@ ipconfig /flushdns
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 ```
 
-(근데 설치가 너무 느리다...)
+(~~근데 설치가 너무 느리다...~~)
