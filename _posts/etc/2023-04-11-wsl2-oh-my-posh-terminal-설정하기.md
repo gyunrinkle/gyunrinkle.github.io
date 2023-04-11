@@ -47,3 +47,17 @@ brew install jandedobbeleer/oh-my-posh/oh-my-posh
 ```
 
 (~~근데 설치가 너무 느리다...~~)
+
+설치가 완료되면은
+
+```bash
+cd $(brew --prefix oh-my-posh)
+cd themes
+ls | grep atmoic
+```
+을 해서 `atomic.omp.json` 파일을 찾는다. 그 파일은 `~` 디렉토리로 복사하고, `.profile`을 찾아 마지막 줄에 다음을 추가한다.
+
+```bash
+eval "$(oh-my-posh init bash --config /mnt/c/Users/<WINDOWSUSERNAME>/atomic.omp.json)"
+```
+
