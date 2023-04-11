@@ -30,3 +30,8 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
 brew install hello
 ```
 
+`brew install`이 너무 느릴 수도 있는데, 그럴 때는 `powershell`를 Admin 권한으로 켜서 DNS Cache를 Flush한다.
+
+```powershell
+ipconfig /flushdns
+```
