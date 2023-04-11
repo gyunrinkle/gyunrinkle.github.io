@@ -12,3 +12,5 @@ sitemap:
 ```powershell
 wsl --install Ubuntu
 ```
+
+`username`이랑 `password` 새로 입력하고 로그인 하면 됨.
