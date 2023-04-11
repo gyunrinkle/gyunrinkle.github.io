@@ -61,3 +61,8 @@ ls | grep atmoic
 eval "$(oh-my-posh init bash --config /mnt/c/Users/<WINDOWSUSERNAME>/atomic.omp.json)"
 ```
 
+그리고 terminal을 껏켯하면 터미널이 이쁘게 보인다. 
+
+이상.
+
+레퍼런스: <https://learn.microsoft.com/ko-kr/windows/terminal/tutorials/custom-prompt-setup>
