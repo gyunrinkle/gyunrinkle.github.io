@@ -8,7 +8,10 @@ comments: true
 sitemap:
   changefreq: daily
 ---
-
+먼저 다음 패키지들을 설치한다.
+```bash
+sudo apt-get install build-essential procps curl file git -y
+```
 먼저 wsl에서 `brew`를 설치한다.
 
 ```bash
