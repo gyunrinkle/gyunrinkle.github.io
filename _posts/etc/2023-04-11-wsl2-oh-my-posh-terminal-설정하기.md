@@ -12,7 +12,8 @@ sitemap:
 ```bash
 sudo apt-get install build-essential procps curl file git -y
 ```
-먼저 wsl에서 `brew`를 설치한다.
+
+그 다음 wsl에서 `brew`를 설치한다.
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -44,3 +45,5 @@ ipconfig /flushdns
 ```bash
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 ```
+
+(근데 설치가 너무 느리다...)
