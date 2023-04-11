@@ -35,3 +35,9 @@ brew install hello
 ```powershell
 ipconfig /flushdns
 ```
+
+암튼 아래 명령어로 `oh-my-posh`를 설치한다.
+
+```bash
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+```
