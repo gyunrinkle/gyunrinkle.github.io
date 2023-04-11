@@ -14,3 +14,8 @@ wsl --install Ubuntu
 ```
 
 `username`이랑 `password` 새로 입력하고 로그인 하면 됨.
+그리고 패키지 업데이트를 해주자.
+
+```bash
+sudo apt update -y && sudo apt upgrade -y && sudo apt auto-remove -y
+```
