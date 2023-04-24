@@ -319,3 +319,5 @@ make: *** [Makefile:27: all] Error 2
 
 이유는 source code 중 일부가 deprecated 된 instruction을 쓰고 있어서이다. `sim/seq/ssim.c` 과 `sim/pipe/psim.c`의 코드 일부를 다음과 같이 수정한다.
 
+> All of the changes involve the substitution of the `interp->result = "some string";` lines with `Tcl_SetResult(interp, "some string", TCL_STATIC);`. Similarly, the `fprintf(stderr, "some string", sim_interp->result);` instructions need to be substituted with `fprintf(stderr, "some string", Tcl_GetStringResult(sim_interp));`. These lines need to be changed in both `psim.c` and `ssim.c`.
+
