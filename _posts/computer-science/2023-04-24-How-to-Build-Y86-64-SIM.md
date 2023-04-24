@@ -9,7 +9,8 @@ sitemap:
   changefreq: daily
 ---
 
-실습 환경: 
+실습 환경:
+
 ```bash
 No LSB modules are available.
 Distributor ID: Ubuntu
@@ -159,6 +160,7 @@ LCFLAGS=-O1 -fcommon
 make clean
 make
 ```
+
 드디어 빌드가 되나?! 싶었는데 또 오류다.
 
 ```bash
@@ -365,7 +367,8 @@ make: *** [Makefile:27: all] Error 2
 
 아 ㅋㅋ;;
 
-이번에는 
+이번에는
+
 ```bash
 /usr/bin/ld: /tmp/ccja0V8S.o:(.data.rel+0x0): undefined reference to `matherr'
 ```
@@ -451,7 +454,7 @@ hcl.tab.c: hcl.y
 	$(YACC) -d hcl.y
 
 clean:
-	rm -f *.o *.yo *.exe yis yas hcl2c mux4 *~ core.* 
+	rm -f *.o *.yo *.exe yis yas hcl2c mux4 *~ core.*
 	rm -f hcl.tab.c hcl.tab.h lex.yy.c yas-grammar.c
 ```
 
@@ -477,7 +480,7 @@ TKLIBS=-L/usr/lib/x86_64-linux-gnu/ -ltk -ltcl
 # header files on your system. Comment this out if you don't have
 # Tcl/Tk.
 
-TKINC=-isystem /usr/include/tcl8.6 
+TKINC=-isystem /usr/include/tcl8.6
 
 # Modify these two lines to choose your compiler and compile time
 # flags.
@@ -505,7 +508,7 @@ psim: psim.c sim.h pipe-$(VERSION).hcl $(MISCDIR)/isa.c $(MISCDIR)/isa.h
 		$(MISCDIR)/isa.c $(LIBS)
 
 # This rule builds driver programs for Part C of the Architecture Lab
-drivers: 
+drivers:
 	./gen-driver.pl -n 4 -f ncopy.ys > sdriver.ys
 	../misc/yas sdriver.ys
 	./gen-driver.pl -n 63 -f ncopy.ys > ldriver.ys
@@ -518,7 +521,7 @@ drivers:
 
 
 clean:
-	rm -f psim pipe-*.c *.o *.exe *~ 
+	rm -f psim pipe-*.c *.o *.exe *~
 ```
 
 `sim/seq/Makefile`:
@@ -543,7 +546,7 @@ TKLIBS=-L/usr/lib/x86_64-linux-gnu/ -ltk -ltcl
 # header files on your system. Comment this out if you don't have
 # Tcl/Tk.
 
-TKINC=-isystem /usr/include/tcl8.6 
+TKINC=-isystem /usr/include/tcl8.6
 
 # Modify these two lines to choose your compiler and compile time
 # flags.
@@ -571,7 +574,7 @@ ssim: seq-$(VERSION).hcl ssim.c  sim.h $(MISCDIR)/isa.c $(MISCDIR)/isa.h
 		seq-$(VERSION).c ssim.c $(MISCDIR)/isa.c $(LIBS)
 
 # This rule builds the SEQ+ simulator (ssim+)
-ssim+: seq+-std.hcl ssim.c sim.h $(MISCDIR)/isa.c $(MISCDIR)/isa.h 
+ssim+: seq+-std.hcl ssim.c sim.h $(MISCDIR)/isa.c $(MISCDIR)/isa.h
 	# Building the seq+-std.hcl version of SEQ+
 	$(HCL2C) -n seq+-std.hcl <seq+-std.hcl >seq+-std.c
 	$(CC) $(CFLAGS) $(INC) -o ssim+ \
@@ -612,7 +615,7 @@ SEQ+FILES = asum.seq+ asumr.seq+ cjr.seq+ j-cc.seq+ poptest.seq+ pushquestion.se
 .SUFFIXES:
 .SUFFIXES: .c .s .o .ys .yo .yis .pipe .seq .seq+
 
-all: $(YOFILES) 
+all: $(YOFILES)
 
 test: testpsim testssim testssim+
 
@@ -861,7 +864,7 @@ int sim_main(int argc, char **argv)
 #if 0
 	printf("argv[0]=%s\n", argv[0]);
 	{
-	    char buf[1000]; 
+	    char buf[1000];
 	    getcwd(buf, 1000);
 	    printf("cwd=%s\n", buf);
 	}
@@ -1956,6 +1959,7 @@ int Tcl_AppInit(Tcl_Interp *interp)
 ```
 
 `sim/pipe/psim.c`:
+
 ```c
 /**************************************************************************
  * psim.c - Pipelined Y86-64 simulator
