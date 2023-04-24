@@ -148,7 +148,7 @@ make: *** [Makefile:26: all] Error 2
 <https://stackoverflow.com/questions/63152352/fail-to-compile-the-y86-simulatur-csapp>를 참고해서 trouble shooting을 했다. (~~shout to 컴구 교수님~~)
 
 gcc-10부터 default gcc compile flag가 `-fcommon`에서 `-fno-common`으로 바뀌었기 때문이다.
-그래서`sim/misc/Makefile`을 다음과 같이 변경한다.
+그래서`sim/misc/Makefile`을 다음과 같이 변경한다. (`pipe/Makefile`, `seq/Makefile`, `y86-code/Makefile`도 똑같이 변경)
 
 ```c
 CFLAGS=-Wall -O1 -g -fcommon
