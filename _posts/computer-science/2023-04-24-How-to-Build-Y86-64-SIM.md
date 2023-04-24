@@ -86,3 +86,31 @@ sudo find / -iname tcl.h
 ```
 TKINC=-isystem /usr/include/tcl8.6
 ```
+
+# `make`로 Build
+
+```bash
+make clean; make
+```
+
+`make`로 build를 하면 오류가 엄청 뿜어져 나온다.
+
+```bash
+(cd misc; make all)
+make[1]: Entering directory '/workspaces/comedu-computer-architecture/sim/misc'
+gcc -Wall -O1 -g -c yis.c
+gcc -Wall -O1 -g -c isa.c
+gcc -Wall -O1 -g yis.o isa.o -o yis
+gcc -Wall -O1 -g -c yas.c
+flex yas-grammar.lex
+make[1]: flex: No such file or directory
+make[1]: *** [Makefile:22: yas-grammar.c] Error 127
+make[1]: Leaving directory '/workspaces/comedu-computer-architecture/sim/misc'
+make: *** [Makefile:26: all] Error 2
+```
+
+음... `flex` 라는 명령어가 없어서 에러가 난 거 같다.
+
+```bash
+sudo apt install flex -y
+```
