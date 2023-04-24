@@ -87,7 +87,7 @@ sudo find / -iname tcl.h
 TKINC=-isystem /usr/include/tcl8.6
 ```
 
-위의 변경 사항을 `misc/Makefile`, `pipe/Makefile`, `seq/Makefile`, `y86-code/Makefile`에 모두 똑같이 반영한다.
+위의 변경 사항을 `misc/Makefile`, `pipe/Makefile`, `seq/Makefile`에 모두 똑같이 반영한다.
 
 # `make`로 Build 시 오류 잡기
 
