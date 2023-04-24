@@ -182,3 +182,141 @@ make: *** [Makefile:26: all] Error 2
 ```bash
 sudo apt install bison -y
 ```
+
+```bash
+make clean
+make
+```
+
+아 이제 build 되나? ㅋㅋ
+
+```bash
+(cd misc; make all)
+make[1]: Entering directory '/workspaces/comedu-computer-architecture/sim/misc'
+gcc -Wall -O1 -g -fcommon -c yis.c
+gcc -Wall -O1 -g -fcommon -c isa.c
+gcc -Wall -O1 -g -fcommon yis.o isa.o -o yis
+gcc -Wall -O1 -g -fcommon -c yas.c
+flex yas-grammar.lex
+mv lex.yy.c yas-grammar.c
+gcc -O1 -fcommon -c yas-grammar.c
+gcc -Wall -O1 -g -fcommon yas-grammar.o yas.o isa.o -lfl -o yas
+bison -d hcl.y
+flex hcl.lex
+gcc -O1 -fcommon node.c lex.yy.c hcl.tab.c outgen.c -o hcl2c
+make[1]: Leaving directory '/workspaces/comedu-computer-architecture/sim/misc'
+(cd pipe; make all GUIMODE=-DHAS_GUI TKLIBS="-L/usr/lib/x86_64-linux-gnu/ -ltk -ltcl" TKINC="-isystem /usr/include/tcl8.6")
+make[1]: Entering directory '/workspaces/comedu-computer-architecture/sim/pipe'
+# Building the pipe-std.hcl version of PIPE
+../misc/hcl2c -n pipe-std.hcl < pipe-std.hcl > pipe-std.c
+gcc -Wall -O2 -isystem /usr/include/tcl8.6 -I../misc -DHAS_GUI -o psim psim.c pipe-std.c \
+        ../misc/isa.c -L/usr/lib/x86_64-linux-gnu/ -ltk -ltcl -lm
+psim.c: In function ‘simResetCmd’:
+psim.c:853:15: error: ‘Tcl_Interp’ has no member named ‘result’
+  853 |         interp->result = "No arguments allowed";
+      |               ^~
+psim.c:861:11: error: ‘Tcl_Interp’ has no member named ‘result’
+  861 |     interp->result = stat_name(STAT_AOK);
+      |           ^~
+psim.c: In function ‘simLoadCodeCmd’:
+psim.c:872:15: error: ‘Tcl_Interp’ has no member named ‘result’
+  872 |         interp->result = "One argument required";
+      |               ^~
+psim.c:878:15: error: ‘Tcl_Interp’ has no member named ‘result’
+  878 |         interp->result = tcl_msg;
+      |               ^~
+psim.c:885:11: error: ‘Tcl_Interp’ has no member named ‘result’
+  885 |     interp->result = tcl_msg;
+      |           ^~
+psim.c: In function ‘simLoadDataCmd’:
+psim.c:895:11: error: ‘Tcl_Interp’ has no member named ‘result’
+  895 |     interp->result = "Not implemented";
+      |           ^~
+psim.c:901:15: error: ‘Tcl_Interp’ has no member named ‘result’
+  901 |         interp->result = "One argument required";
+      |               ^~
+psim.c:907:15: error: ‘Tcl_Interp’ has no member named ‘result’
+  907 |         interp->result = tcl_msg;
+      |               ^~
+psim.c:911:11: error: ‘Tcl_Interp’ has no member named ‘result’
+  911 |     interp->result = tcl_msg;
+      |           ^~
+psim.c: In function ‘simRunCmd’:
+psim.c:925:15: error: ‘Tcl_Interp’ has no member named ‘result’
+  925 |         interp->result = "At most one argument allowed";
+      |               ^~
+psim.c:932:15: error: ‘Tcl_Interp’ has no member named ‘result’
+  932 |         interp->result = tcl_msg;
+      |               ^~
+psim.c:936:11: error: ‘Tcl_Interp’ has no member named ‘result’
+  936 |     interp->result = stat_name(status);
+      |           ^~
+psim.c: In function ‘simModeCmd’:
+psim.c:945:15: error: ‘Tcl_Interp’ has no member named ‘result’
+  945 |         interp->result = "One argument required";
+      |               ^~
+psim.c:948:11: error: ‘Tcl_Interp’ has no member named ‘result’
+  948 |     interp->result = argv[1];
+      |           ^~
+psim.c:957:15: error: ‘Tcl_Interp’ has no member named ‘result’
+  957 |         interp->result = tcl_msg;
+      |               ^~
+psim.c: In function ‘signal_register_update’:
+psim.c:994:63: error: ‘Tcl_Interp’ has no member named ‘result’
+  994 |         fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                               ^~
+psim.c: In function ‘create_memory_display’:
+psim.c:1005:63: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1005 |         fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                               ^~
+psim.c:1020:67: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1020 |             fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                                   ^~
+psim.c: In function ‘set_memory’:
+psim.c:1055:67: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1055 |             fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                                   ^~
+psim.c: In function ‘show_cc’:
+psim.c:1069:63: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1069 |         fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                               ^~
+psim.c: In function ‘show_stat’:
+psim.c:1081:63: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1081 |         fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                               ^~
+psim.c: In function ‘show_cpi’:
+psim.c:1096:63: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1096 |         fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                               ^~
+psim.c: In function ‘signal_sources’:
+psim.c:1110:63: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1110 |         fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                               ^~
+psim.c: In function ‘signal_register_clear’:
+psim.c:1120:63: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1120 |         fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                               ^~
+psim.c: In function ‘report_line’:
+psim.c:1134:63: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1134 |         fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                               ^~
+psim.c: In function ‘report_pc’:
+psim.c:1190:63: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1190 |         fprintf(stderr, "Error Message was '%s'\n", sim_interp->result);
+      |                                                               ^~
+psim.c: In function ‘report_state’:
+psim.c:1204:65: error: ‘Tcl_Interp’ has no member named ‘result’
+ 1204 |         fprintf(stderr, "\tError Message was '%s'\n", sim_interp->result);
+      |                                                                 ^~
+make[1]: *** [Makefile:44: psim] Error 1
+make[1]: Leaving directory '/workspaces/comedu-computer-architecture/sim/pipe'
+make: *** [Makefile:27: all] Error 2
+```
+
+😢😢 또 오류가 난다.
+
+<https://onestepcode.com/install-csapp-y86-64-processor-simulator/>이 웹사이트의 trouble shooting 방법을 참고 했다.
+
+이유는 source code 중 일부가 deprecated 된 instruction을 쓰고 있어서이다. `sim/seq/ssim.c` 과 `sim/seq/psim.c`의 코드 일부를 다음과 같이 수정한다.
+
+> `interp->result = "some string";` lines with `Tcl_SetResult(interp, "some string", TCL_STATIC);`. Similarly, the `fprintf(stderr, "some string", sim_interp->result);` instructions need to be substituted with `fprintf(stderr, "some string", Tcl_GetStringResult(sim_interp));`. These lines need to be changed in both `psim.c` and `ssim.c`.
