@@ -370,5 +370,11 @@ make: *** [Makefile:27: all] Error 2
 
 이 error다.
 
-이 에러는 `matherr` symbol이 더 이상 Glibc의 part가 아니여서 생기는 오류다. `psim.c`에서 한 줄만 comment하면 해결된다.
+이 에러는 `matherr` symbol이 더 이상 Glibc의 part가 아니여서 생기는 오류다. `psim.c`과 `ssim.c`에서 두 줄만 comment하면 해결된다.
+
+```c
+/* Hack for SunOS */
+// extern int matherr();
+// int *tclDummyMathPtr = (int *)matherr;
+```
 
