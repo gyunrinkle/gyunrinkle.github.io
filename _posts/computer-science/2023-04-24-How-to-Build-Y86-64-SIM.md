@@ -18,5 +18,5 @@ tar xf sim.tar
 GUI 버전으로 Build하기 위해서는 `tk`, `tk-dev`, `tcl`, `tcl-dev` package를 미리 설치해 줘야 한다.
 
 ```bash
-sudo apt update -y && sudo apt install -y tcl tcl-dev tk tk-dev
+sudo apt update && sudo apt install tcl tcl-dev tk tk-dev -y
 ```
