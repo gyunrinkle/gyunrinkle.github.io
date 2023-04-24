@@ -58,7 +58,7 @@ ls | grep atmoic
 을 해서 `atomic.omp.json` 파일을 찾는다. 그 파일은 `~` 디렉토리로 복사하고, `.profile`을 찾아 마지막 줄에 다음을 추가한다.
 
 ```bash
-eval "$(oh-my-posh init bash --config /mnt/c/Users/<WINDOWSUSERNAME>/atomic.omp.json)"
+eval "$(oh-my-posh init bash --config ~/atomic.omp.json)"
 ```
 
 그리고 terminal을 껏켯하면 터미널이 이쁘게 보인다. 
