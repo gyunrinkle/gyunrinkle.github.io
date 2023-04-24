@@ -380,3 +380,13 @@ make: *** [Makefile:27: all] Error 2
 // int *tclDummyMathPtr = (int *)matherr;
 ```
 
+```bash
+make clean
+make
+cd seq
+./ssim -g ../y86-code/asum.yo
+```
+
+하면 짜잔!~ 하고 GUI 기반 Y86-64 시뮬레이션이 실행된다.
+
+# 암튼 변경사항이 진짜 많다.
