@@ -3662,3 +3662,8 @@ void do_stall_check()
     mem_wb_state->op = pipe_cntl("WB", gen_W_stall(), gen_W_bubble());
 }
 ```
+
+```bash
+sudo apt update -y && sudo apt upgrade -y && sudo apt auto-remove -y && sudo apt install tcl tcl-dev tk tk-dev flex bison -y
+make clean; make
+```
