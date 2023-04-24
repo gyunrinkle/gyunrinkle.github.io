@@ -9,3 +9,8 @@ sitemap:
   changefreq: daily
 ---
 
+
+```
+wget http://csapp.cs.cmu.edu/3e/sim.tar
+tar xf sim.tar
+```
