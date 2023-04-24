@@ -152,3 +152,33 @@ gcc-10부터 default gcc compile flag가 `-fcommon`에서 `-fno-common`으로 �
 CFLAGS=-Wall -O1 -g -fcommon
 LCFLAGS=-O1 -fcommon
 ```
+
+```bash
+make clean
+make
+```
+드디어 빌드가 되나?! 싶었는데 또 오류다.
+
+```bash
+(cd misc; make all)
+make[1]: Entering directory '/workspaces/comedu-computer-architecture/sim/misc'
+gcc -Wall -O1 -g -fcommon -c yis.c
+gcc -Wall -O1 -g -fcommon -c isa.c
+gcc -Wall -O1 -g -fcommon yis.o isa.o -o yis
+gcc -Wall -O1 -g -fcommon -c yas.c
+flex yas-grammar.lex
+mv lex.yy.c yas-grammar.c
+gcc -O1 -fcommon -c yas-grammar.c
+gcc -Wall -O1 -g -fcommon yas-grammar.o yas.o isa.o -lfl -o yas
+bison -d hcl.y
+make[1]: bison: No such file or directory
+make[1]: *** [Makefile:53: hcl.tab.c] Error 127
+make[1]: Leaving directory '/workspaces/comedu-computer-architecture/sim/misc'
+make: *** [Makefile:26: all] Error 2
+```
+
+이번에는 `bison`이 없는 거 같다. 설치를 해 주자.
+
+```bash
+sudo apt install bison -y
+```
