@@ -50,7 +50,7 @@ TKLIBS=-L/usr/lib -ltk -ltcl
 TKINC=-isystem /usr/include/tcl8.5
 ```
 
-`GUIMODE`로 build 하려면 일단 3번 째 줄을 uncomment해 줘야 한다. 그리고 gcc가 build를 할 때 `libtcl.so`과 `libtk.so` library를 알맞은 directory에 찾을 수 있도록 path를 정확히 설정해줘야 한다. `tcl.h`과 `tk.h` 또한 그렇다.
+`GUIMODE`로 build 하려면 일단 3번 째 줄을 **uncomment**해 줘야 한다. 그리고 gcc가 build를 할 때 `libtcl.so`과 `libtk.so` library를 알맞은 directory에 찾을 수 있도록 path를 정확히 설정해줘야 한다. `tcl.h`과 `tk.h` 또한 그렇다.
 
 ```bash
 sudo find / -iname libtk.so
