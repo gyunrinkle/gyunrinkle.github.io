@@ -90,7 +90,8 @@ TKINC=-isystem /usr/include/tcl8.6
 # `make`로 Build
 
 ```bash
-make clean; make
+make clean
+make
 ```
 
 `make`로 build를 하면 오류가 엄청 뿜어져 나온다.
@@ -113,4 +114,11 @@ make: *** [Makefile:26: all] Error 2
 
 ```bash
 sudo apt install flex -y
+```
+
+설치를 해주고, 다시 build하자.
+
+```bash
+make clean
+make
 ```
