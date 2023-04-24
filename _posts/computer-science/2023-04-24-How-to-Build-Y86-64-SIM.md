@@ -321,3 +321,54 @@ make: *** [Makefile:27: all] Error 2
 
 > All of the changes involve the substitution of the `interp->result = "some string";` lines with `Tcl_SetResult(interp, "some string", TCL_STATIC);`. Similarly, the `fprintf(stderr, "some string", sim_interp->result);` instructions need to be substituted with `fprintf(stderr, "some string", Tcl_GetStringResult(sim_interp));`. These lines need to be changed in both `psim.c` and `ssim.c`.
 
+```bash
+make clean
+make
+```
+
+이제 되나..?!
+
+```bash
+(cd misc; make all)
+make[1]: Entering directory '/workspaces/comedu-computer-architecture/sim/misc'
+gcc -Wall -O1 -g -fcommon -c yis.c
+gcc -Wall -O1 -g -fcommon -c isa.c
+gcc -Wall -O1 -g -fcommon yis.o isa.o -o yis
+gcc -Wall -O1 -g -fcommon -c yas.c
+flex yas-grammar.lex
+mv lex.yy.c yas-grammar.c
+gcc -O1 -fcommon -c yas-grammar.c
+gcc -Wall -O1 -g -fcommon yas-grammar.o yas.o isa.o -lfl -o yas
+bison -d hcl.y
+flex hcl.lex
+gcc -O1 -fcommon node.c lex.yy.c hcl.tab.c outgen.c -o hcl2c
+make[1]: Leaving directory '/workspaces/comedu-computer-architecture/sim/misc'
+(cd pipe; make all GUIMODE=-DHAS_GUI TKLIBS="-L/usr/lib/x86_64-linux-gnu/ -ltk -ltcl" TKINC="-isystem /usr/include/tcl8.6")
+make[1]: Entering directory '/workspaces/comedu-computer-architecture/sim/pipe'
+# Building the pipe-std.hcl version of PIPE
+../misc/hcl2c -n pipe-std.hcl < pipe-std.hcl > pipe-std.c
+gcc -Wall -O2 -isystem /usr/include/tcl8.6 -I../misc -DHAS_GUI -o psim psim.c pipe-std.c \
+        ../misc/isa.c -L/usr/lib/x86_64-linux-gnu/ -ltk -ltcl -lm
+/usr/bin/ld: /tmp/ccnza7vP.o:(.bss+0x0): multiple definition of `mem_wb_state'; /tmp/ccja0V8S.o:(.bss+0x120): first defined here
+/usr/bin/ld: /tmp/ccnza7vP.o:(.bss+0x8): multiple definition of `ex_mem_state'; /tmp/ccja0V8S.o:(.bss+0x128): first defined here
+/usr/bin/ld: /tmp/ccnza7vP.o:(.bss+0x10): multiple definition of `id_ex_state'; /tmp/ccja0V8S.o:(.bss+0x130): first defined here
+/usr/bin/ld: /tmp/ccnza7vP.o:(.bss+0x18): multiple definition of `if_id_state'; /tmp/ccja0V8S.o:(.bss+0x138): first defined here
+/usr/bin/ld: /tmp/ccnza7vP.o:(.bss+0x20): multiple definition of `pc_state'; /tmp/ccja0V8S.o:(.bss+0x140): first defined here
+/usr/bin/ld: /tmp/ccja0V8S.o:(.data.rel+0x0): undefined reference to `matherr'
+collect2: error: ld returned 1 exit status
+make[1]: *** [Makefile:44: psim] Error 1
+make[1]: Leaving directory '/workspaces/comedu-computer-architecture/sim/pipe'
+make: *** [Makefile:27: all] Error 2
+```
+
+아 ㅋㅋ;;
+
+이번에는 
+```bash
+/usr/bin/ld: /tmp/ccja0V8S.o:(.data.rel+0x0): undefined reference to `matherr'
+```
+
+이 error다.
+
+이 에러는 `matherr` symbol이 더 이상 Glibc의 part가 아니여서 생기는 오류다. `psim.c`에서 한 줄만 comment하면 해결된다.
+
