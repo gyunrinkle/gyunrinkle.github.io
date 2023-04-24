@@ -9,6 +9,14 @@ sitemap:
   changefreq: daily
 ---
 
+실습 환경: 
+```bash
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 22.04.2 LTS
+Release:        22.04
+Codename:       jammy
+```
 
 ```bash
 wget http://csapp.cs.cmu.edu/3e/sim.tar
@@ -40,4 +48,39 @@ TKLIBS=-L/usr/lib -ltk -ltcl
 # Tcl/Tk.
 
 TKINC=-isystem /usr/include/tcl8.5
+```
+
+`GUIMODE`로 build 하려면 일단 3번 째 줄을 uncomment해 줘야 한다. 그리고 gcc가 build를 할 때 `libtcl.so`과 `libtk.so` library를 알맞은 directory에 찾을 수 있도록 path를 정확히 설정해줘야 한다. `tcl.h`과 `tk.h` 또한 그렇다.
+
+```bash
+sudo find / -iname libtk.so
+```
+
+그러면 다음과 결과 나올 것이다.
+
+```bash
+/usr/lib/x86_64-linux-gnu/libtk.so
+```
+
+그러면 `Makefile`을 다음과 같이 바꾼다.
+
+```
+TKLIBS=-L/usr/lib/x86_64-linux-gnu/ -ltk -ltcl
+```
+
+```bash
+sudo find / -iname tcl.h
+```
+
+그러면 다음과 같은 검색 결과가 나온다.
+
+```bash
+/usr/include/tcl8.6/tcl-private/generic/tcl.h
+/usr/include/tcl8.6/tcl.h
+```
+
+`Makefile`을 다음과 같이 변경한다.
+
+```
+TKINC=-isystem /usr/include/tcl8.6
 ```
