@@ -33,7 +33,7 @@ sudo apt update && sudo apt install tcl tcl-dev tk tk-dev -y
 
 `make`로 빌드하기 전에 `sim/Makefile`을 잠시 살펴 보자.
 
-```
+```c
 # Comment this out if you don't have Tcl/Tk on your system
 
 GUIMODE=-DHAS_GUI
@@ -66,7 +66,7 @@ sudo find / -iname libtk.so
 
 그러면 `Makefile`을 다음과 같이 바꾼다.
 
-```
+```c
 TKLIBS=-L/usr/lib/x86_64-linux-gnu/ -ltk -ltcl
 ```
 
@@ -83,11 +83,11 @@ sudo find / -iname tcl.h
 
 `Makefile`을 다음과 같이 변경한다.
 
-```
+```c
 TKINC=-isystem /usr/include/tcl8.6
 ```
 
-# `make`로 Build
+# `make`로 Build 시 오류 잡기
 
 ```bash
 make clean
@@ -121,4 +121,34 @@ sudo apt install flex -y
 ```bash
 make clean
 make
+```
+
+```bash
+(cd misc; make all)
+make[1]: Entering directory '/workspaces/comedu-computer-architecture/sim/misc'
+gcc -Wall -O1 -g -c yis.c
+gcc -Wall -O1 -g -c isa.c
+gcc -Wall -O1 -g yis.o isa.o -o yis
+gcc -Wall -O1 -g -c yas.c
+flex yas-grammar.lex
+mv lex.yy.c yas-grammar.c
+gcc -O1 -c yas-grammar.c
+gcc -Wall -O1 -g yas-grammar.o yas.o isa.o -lfl -o yas
+/usr/bin/ld: yas.o:/workspaces/comedu-computer-architecture/sim/misc/yas.h:13: multiple definition of `lineno'; yas-grammar.o:(.bss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make[1]: *** [Makefile:32: yas] Error 1
+make[1]: Leaving directory '/workspaces/comedu-computer-architecture/sim/misc'
+make: *** [Makefile:26: all] Error 2
+```
+
+다시 오류가 난다. 오류를 보니 `lineno`랑 문제가 있는 것 같다.
+
+<https://stackoverflow.com/questions/63152352/fail-to-compile-the-y86-simulatur-csapp>를 참고해서 trouble shooting을 했다. (~~shout to 컴구 교수님~~)
+
+gcc-10부터 default gcc compile flag가 `-fcommon`에서 `-fno-common`으로 바뀌었기 때문이다.
+그래서`sim/misc/Makefile`을 다음과 같이 변경한다.
+
+```c
+CFLAGS=-Wall -O1 -g -fcommon
+LCFLAGS=-O1 -fcommon
 ```
